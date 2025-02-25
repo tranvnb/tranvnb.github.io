@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Brian Vo</title>
+    <link>https://www.brianvo.dev/</link>
+    <description>Recent content on Brian Vo</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 02 May 2021 01:07:19 +0000</lastBuildDate>
+    <atom:link href="https://www.brianvo.dev/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How to use Redux and its benefits</title>
+      <link>https://www.brianvo.dev/blog/2021-03-02_redux-for-react/</link>
+      <pubDate>Sun, 02 May 2021 01:07:19 +0000</pubDate>
+      <guid>https://www.brianvo.dev/blog/2021-03-02_redux-for-react/</guid>
+      <description>&lt;h3 id=&#34;introduction&#34;&gt;Introduction&lt;/h3&gt;&#xA;&lt;p&gt;Redux is one of the most popular state management libraries and specifically for ReactJs. It helps to centralize all the component states of the application and provide the ability to track all of state changes over time.&lt;/p&gt;&#xA;&lt;p&gt;In this tutorial, we will be creating a ReactJs app with both Redux and Redux toolkit to demonstrate the advantages/disadvantages of Redux toolkit over Redux.&lt;/p&gt;&#xA;&lt;p&gt;This is the &lt;a href=&#34;https://vivacious-befitting-softball.glitch.me/&#34;&gt;demo&lt;/a&gt; of this project.&lt;/p&gt;&#xA;&lt;h3 id=&#34;redux-in-a-nutshell&#34;&gt;Redux in a nutshell&lt;/h3&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#x9;                                                                                &#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;              GUI                                        Reducers               &#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        +-------------+                               +-------------+           &#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        | User        |          Dispatch             | Update state|           &#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        | interactions ------------------------------&amp;gt;| base on     |           &#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        |             |           Action              | action type |           &#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        +-------------+      +--------------+         +-------------+           &#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;               ^             |  +Type       |                |                  &#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;               |             |  +Payload    |         &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; |new states        &#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt; update        |             +--------------+                |                  &#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt; front-end/GUI |                                             |                  &#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;               |                                      +------v-----+            &#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;               |                                      |            |            &#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;               |         Notify front-end             |store new   |Store       &#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                &amp;lt;-------------------------------------|states      |            &#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                                                      |            |            &#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                                                      +------------+            &#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Redux comprise of 3 main components: &lt;strong&gt;Action&lt;/strong&gt;, &lt;strong&gt;Reducer&lt;/strong&gt;, and &lt;strong&gt;Store&lt;/strong&gt; (storing the states)&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>JAMStack with Hugo and NetlifyCMS - Part 2</title>
+      <link>https://www.brianvo.dev/blog/2021-03-13_jamstack-with-hugo-and-netlifycms-part-2/</link>
+      <pubDate>Mon, 15 Mar 2021 01:39:28 +0000</pubDate>
+      <guid>https://www.brianvo.dev/blog/2021-03-13_jamstack-with-hugo-and-netlifycms-part-2/</guid>
+      <description>&lt;h3 id=&#34;introduction&#34;&gt;Introduction&lt;/h3&gt;&#xA;&lt;p&gt;In &lt;a href=&#34;https://www.brianvo.dev/blog/2021-02-23_jamstack-with-hugo-and-netlifycms/&#34; title=&#34;Part 1&#34;&gt;Part 1&lt;/a&gt;, we have created a simple website with hugo.&lt;/p&gt;&#xA;&lt;p&gt;Now on this part 2, we are going to add netlifyCMS locally and then make our website go live on the internet.&lt;/p&gt;&#xA;&lt;p&gt;This is the github repository for this site: &lt;a href=&#34;https://github.com/tranvnb/hugo-and-netlifycms&#34;&gt;https://github.com/tranvnb/hugo-and-netlifycms&lt;/a&gt;&lt;/p&gt;&#xA;&lt;h3 id=&#34;set-up-local-netlifycms&#34;&gt;Set up local NetlifyCMS&lt;/h3&gt;&#xA;&lt;h4 id=&#34;1-create-configuration-files&#34;&gt;1. Create configuration files&lt;/h4&gt;&#xA;&lt;p&gt;Create a &lt;code&gt;config.yml&lt;/code&gt; file at the top level directory of your website. This file will hold all the global configuration of this website and we&amp;rsquo;re going to put all the site configuration here.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Should I map story point to man-hours in Agile?</title>
+      <link>https://www.brianvo.dev/blog/2021-02-26_should-i-map-story-point-to-man-hours-in-agile/</link>
+      <pubDate>Mon, 01 Mar 2021 19:14:53 +0000</pubDate>
+      <guid>https://www.brianvo.dev/blog/2021-02-26_should-i-map-story-point-to-man-hours-in-agile/</guid>
+      <description>&lt;h4 id=&#34;agile-methodology-is-a-popular-method-in-modern-software-development-industry-but-some-of-its-definitions-and-practical-usages-are-still-ambiguous&#34;&gt;Agile methodology is a popular method in modern software development industry, but some of its definitions and practical usages are still ambiguous.&lt;/h4&gt;&#xA;&lt;h4 id=&#34;i-will-provide-some-questions-i-encouter-and-its-answer-below-to-clarify-the-most-debatable-term-story-point&#34;&gt;I will provide some questions I encouter and its answer below to clarify the most debatable term: Story Point.&lt;/h4&gt;&#xA;&lt;h3 id=&#34;q-should-i-map-story-point-to-man-hours&#34;&gt;Q: Should I map story point to man-hours?&lt;/h3&gt;&#xA;&lt;p&gt;Scrum Guide didn&amp;rsquo;t mention anything about must-use Story Point, but estimation. And purpose of this estimation is the consensus on Scrum team&amp;rsquo;s effort at Sprint completeness. This means any estimated methods could be used but adherence to the exertion of the team.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>JAMStack with Hugo and NetlifyCMS - Part 1</title>
+      <link>https://www.brianvo.dev/blog/2021-02-23_jamstack-with-hugo-and-netlifycms/</link>
+      <pubDate>Mon, 22 Feb 2021 23:34:47 +0000</pubDate>
+      <guid>https://www.brianvo.dev/blog/2021-02-23_jamstack-with-hugo-and-netlifycms/</guid>
+      <description>&lt;h3 id=&#34;introduction&#34;&gt;Introduction&lt;/h3&gt;&#xA;&lt;p&gt;In this post, I will introduce concept of JAMStack and how to build up a simple website on localhost with hugo and NetlifyCMS. But at first, we will quickly go through a few definitions.&lt;/p&gt;&#xA;&lt;p&gt;This is the github repository for this site: &lt;a href=&#34;https://github.com/tranvnb/hugo-and-netlifycms&#34;&gt;https://github.com/tranvnb/hugo-and-netlifycms&lt;/a&gt;&lt;/p&gt;&#xA;&lt;h3 id=&#34;what-is-jamstack-and-why-jamstack&#34;&gt;What is JAMStack and Why JAMStack&lt;/h3&gt;&#xA;&lt;p&gt;JAM acronym stand for Javascript, API, and Markdown which in a combination will create a SEO friendly web content. Moreover, because most of the pages are static content, it&amp;rsquo;s easy to apply any kind of cache mechanism. Outside of that, there&amp;rsquo;s a lot of advantages (and yes disadvantages) which will be covered in another post.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Recipe App Ux Study</title>
+      <link>https://www.brianvo.dev/portfolio/recipe-app-ux-study/</link>
+      <pubDate>Wed, 12 Aug 2020 18:19:35 +0600</pubDate>
+      <guid>https://www.brianvo.dev/portfolio/recipe-app-ux-study/</guid>
+      <description>&lt;p&gt;Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>UX Case Study for Agriculture App</title>
+      <link>https://www.brianvo.dev/portfolio/ux-case-study-for-agriculture-app/</link>
+      <pubDate>Wed, 12 Aug 2020 12:13:40 +0000</pubDate>
+      <guid>https://www.brianvo.dev/portfolio/ux-case-study-for-agriculture-app/</guid>
+      <description>&lt;p&gt;Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Event App Case Study</title>
+      <link>https://www.brianvo.dev/portfolio/event-app-case-study/</link>
+      <pubDate>Wed, 12 Aug 2020 18:07:16 +0600</pubDate>
+      <guid>https://www.brianvo.dev/portfolio/event-app-case-study/</guid>
+      <description>&lt;p&gt;Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Case Study One</title>
+      <link>https://www.brianvo.dev/portfolio/case-study-one/</link>
+      <pubDate>Mon, 13 Jul 2020 12:49:27 +0600</pubDate>
+      <guid>https://www.brianvo.dev/portfolio/case-study-one/</guid>
+      <description>&lt;p&gt;Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

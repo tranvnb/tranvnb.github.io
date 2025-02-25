@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>JAMStack with Hugo and NetlifyCMS - Part 2</title>
+
+  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+
+  
+
+
+<!-- Social Media Tags -->
+<meta property='og:title' content='JAMStack with Hugo and NetlifyCMS - Part 2'/>
+<meta property='og:image' content='https://www.brianvo.dev/images/allpost/jam_hugo_netlifycms.jpg'/>
+<meta property='og:description' content='Set up local NetlifyCMS configuration yml or toml file for easy creating blog post and make our website go live by deploying to Netlify service'/> 
+
+
+<meta name="twitter:title" content='JAMStack with Hugo and NetlifyCMS - Part 2'>
+<meta name="twitter:description" content='https://www.brianvo.dev/images/allpost/jam_hugo_netlifycms.jpg'>
+<meta name="twitter:image" content='Set up local NetlifyCMS configuration yml or toml file for easy creating blog post and make our website go live by deploying to Netlify service'>
+
+
+
+
+
+  <!-- Slick Carousel -->
+  <link rel="stylesheet" href="https://www.brianvo.dev/plugins/slick/slick.css" />
+  <link rel="stylesheet" href="https://www.brianvo.dev/plugins/slick/slick-theme.css" />
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://www.brianvo.dev/plugins/font-awesome/css/font-awesome.min.css" />
+
+  <!-- Magnific Popup -->
+  <link rel="stylesheet" href="https://www.brianvo.dev/plugins/magnafic-popup/magnific-popup.css" />
+
+  <!-- Stylesheets -->
+  
+  <link href="https://www.brianvo.dev/scss/style.min.css" rel="stylesheet" />
+
+  <!--Favicon-->
+  <link rel="shortcut icon" href="https://www.brianvo.dev/images/favicon.ico" type="image/x-icon" />
+  <link rel="icon" href="https://www.brianvo.dev/images/favicon.png" type="image/x-icon" />
+  
+    
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-9CG05CN5E7"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() { dataLayer.push(arguments); }
+      gtag('js', new Date());
+
+      gtag('config', 'G-9CG05CN5E7');
+    </script>
+    
+  
+  
+</head>
+
+
+<body>
+  
+  <nav class="navbar navbar-expand-lg fixed-top">
+  <div class="container">
+    <a href="https://www.brianvo.dev/" class="navbar-brand">
+      <img style="width: 68px; border-radius: 31%;" src="https://www.brianvo.dev/images/site-navigation/logo.jpg" alt="site-logo">
+    </a>
+    <button type="button" class="navbar-toggler collapsed" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+      <span class="navbar-toggler-icon"></span>
+      <span class="navbar-toggler-icon"></span>
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+      <ul class="nav navbar-nav main-navigation my-0 mx-auto">
+        
+        
+        <li class="nav-item">
+          <a href="https://www.brianvo.dev/#home"
+            class="nav-link text-dark text-sm-center p-2 ">Home</a>
+        </li>
+        
+        <li class="nav-item">
+          <a href="https://www.brianvo.dev/#about"
+            class="nav-link text-dark text-sm-center p-2 ">About</a>
+        </li>
+        
+        <li class="nav-item">
+          <a href="https://www.brianvo.dev/#resume"
+            class="nav-link text-dark text-sm-center p-2 ">Resume</a>
+        </li>
+        
+        <li class="nav-item">
+          <a href="https://www.brianvo.dev/#blog"
+            class="nav-link text-dark text-sm-center p-2 ">Blog</a>
+        </li>
+        
+        <li class="nav-item">
+          <a href="https://www.brianvo.dev/#contact"
+            class="nav-link text-dark text-sm-center p-2 ">Contact</a>
+        </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+  <div id="content">
+    
+
+<header class="breadCrumb">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-10 col-md-12 offset-lg-1 offset-md-0 text-center">
+        <h3 class="breadCrumb__title">JAMStack with Hugo and NetlifyCMS - Part 2</h3>
+        <nav aria-label="breadcrumb" class="d-flex justify-content-center">
+          <ol class="breadcrumb align-items-center">
+            <li class="breadcrumb-item"><a href=https://www.brianvo.dev/>Home</a></li>
+            <li class="breadcrumb-item"><a href=https://www.brianvo.dev/blog>All Post</a></li>
+            <li class="breadcrumb-item active" aria-current="page">JAMStack with Hugo and NetlifyCMS - Part 2</li>
+          </ol>
+        </nav>
+        
+      </div>
+    </div>
+  </div>
+</header>
+
+<section class="section singleBlog">
+  <div class="container">
+      <div class="row singleBlog__publish">
+        <div class="col-lg-6">
+          <div class="d-flex justify-content-center">
+            <span class="small">Published Date: March 15, 2021</span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="row mt-5">
+          <div class="col-lg-12">
+              <div class="singleBlog__content">
+
+                
+
+                  <h3 id="introduction">Introduction</h3>
+<p>In <a href="https://www.brianvo.dev/blog/2021-02-23_jamstack-with-hugo-and-netlifycms/" title="Part 1">Part 1</a>, we have created a simple website with hugo.</p>
+<p>Now on this part 2, we are going to add netlifyCMS locally and then make our website go live on the internet.</p>
+<p>This is the github repository for this site: <a href="https://github.com/tranvnb/hugo-and-netlifycms">https://github.com/tranvnb/hugo-and-netlifycms</a></p>
+<h3 id="set-up-local-netlifycms">Set up local NetlifyCMS</h3>
+<h4 id="1-create-configuration-files">1. Create configuration files</h4>
+<p>Create a <code>config.yml</code> file at the top level directory of your website. This file will hold all the global configuration of this website and we&rsquo;re going to put all the site configuration here.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-Shell" data-lang="Shell"><span style="display:flex;"><span>    my-site$ touch config.yml 
+</span></span></code></pre></div><p>For window</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-Shell" data-lang="Shell"><span style="display:flex;"><span>    my-site&gt; echo. &gt; config.yml
+</span></span></code></pre></div><p>Add this content to above file</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yml" data-lang="yml"><span style="display:flex;"><span>    <span style="color:#f92672">baseURL</span>: <span style="color:#ae81ff">/</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">languageCode</span>: <span style="color:#e6db74">&#34;en-us&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">title</span>: <span style="color:#e6db74">&#34;My New Hugo Site&#34;</span>
+</span></span></code></pre></div><h4 id="2-create-admin-page-of-netlifycms">2. Create admin page of NetlifyCMS</h4>
+<p>At this point, we haven&rsquo;t have anything related to netlifyCMS yet.</p>
+<p>To have an admin page using NetlifyCMS, create directory <code>static/admin/</code> and 2 files in it:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>    <span style="color:#75715e">&lt;!-- static/admin/index.html --&gt;</span>
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">html</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">head</span>&gt;
+</span></span><span style="display:flex;"><span>        &lt;<span style="color:#f92672">meta</span> <span style="color:#a6e22e">charset</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;utf-8&#34;</span> /&gt;
+</span></span><span style="display:flex;"><span>        &lt;<span style="color:#f92672">meta</span> <span style="color:#a6e22e">name</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;viewport&#34;</span> <span style="color:#a6e22e">content</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;width=device-width, initial-scale=1.0&#34;</span> /&gt;
+</span></span><span style="display:flex;"><span>        &lt;<span style="color:#f92672">title</span>&gt;Content Manager&lt;/<span style="color:#f92672">title</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;/<span style="color:#f92672">head</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">body</span>&gt;
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e">&lt;!-- NetlifyCMS --&gt;</span>
+</span></span><span style="display:flex;"><span>        &lt;<span style="color:#f92672">script</span> <span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;https://unpkg.com/netlify-cms@^2.9.6/dist/netlify-cms.js&#34;</span>&gt;&lt;/<span style="color:#f92672">script</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;/<span style="color:#f92672">body</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;/<span style="color:#f92672">html</span>&gt;
+</span></span></code></pre></div><p>This file with the javascript file account for the graphical interface of the content management page.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yml" data-lang="yml"><span style="display:flex;"><span>    <span style="color:#f92672">local_backend</span>: <span style="color:#66d9ef">true</span> <span style="color:#75715e">#Must be put on top, otherwise you have to login to Netlify service to use this admin tool</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">backend</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">name</span>: <span style="color:#ae81ff">git-gateway</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">branch</span>: <span style="color:#ae81ff">main</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">media_folder</span>: <span style="color:#ae81ff">static/images</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">public_folder</span>: <span style="color:#ae81ff">images</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">collections</span>:
+</span></span><span style="display:flex;"><span>    - <span style="color:#f92672">name</span>: <span style="color:#ae81ff">globalConfig</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">label</span>: <span style="color:#ae81ff">Global Site Config    </span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">files</span>: 
+</span></span><span style="display:flex;"><span>        - <span style="color:#f92672">name</span>: <span style="color:#ae81ff">config</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">label</span>: <span style="color:#ae81ff">Global </span>
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">file</span>: <span style="color:#ae81ff">config.yml</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">fields</span>: 
+</span></span><span style="display:flex;"><span>            - <span style="color:#f92672">widget</span>: <span style="color:#ae81ff">string</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#f92672">name</span>: <span style="color:#ae81ff">baseURL</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#f92672">label</span>: <span style="color:#ae81ff">Base Url</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#f92672">required</span>: <span style="color:#66d9ef">true</span>
+</span></span><span style="display:flex;"><span>            - <span style="color:#f92672">widget</span>: <span style="color:#ae81ff">string</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#f92672">name</span>: <span style="color:#ae81ff">title</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#f92672">label</span>: <span style="color:#ae81ff">Title of website</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#f92672">required</span>: <span style="color:#66d9ef">true</span>
+</span></span></code></pre></div><p>Be aware the first line, <strong>without it</strong>, you <strong>can not access</strong> admin page unless you have to create a Netlify account and login through it.</p>
+<p>Let me explain more about config file above</p>
+<ul>
+<li><code>name: globalConfig</code>: name and label show on admin page. You will get this by following screenshot.</li>
+<li><code>file: config.yml</code>: point to our website config, which is located at the root lovel folder. All the changes will be save to it.</li>
+<li><code>fields</code>: configuration fields of <code>config.yml</code> file</li>
+<li><code>widget: string</code>: a widget (field type) holding the values. Please refer to <a href="https://www.netlifycms.org/docs/configuration-options/">Netlify Configuration</a> for more information.</li>
+</ul>
+<p>Start the local NetlifyCMS service</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span>     <span style="color:#a6e22e">npx</span> <span style="color:#a6e22e">netlify</span><span style="color:#f92672">-</span><span style="color:#a6e22e">cms</span><span style="color:#f92672">-</span><span style="color:#a6e22e">proxy</span><span style="color:#f92672">-</span><span style="color:#a6e22e">server</span>
+</span></span></code></pre></div><p>And now, let see what we got</p>
+<div class="nothing">
+    <img src="https://www.brianvo.dev/images/blog/local-netlify-cms.gif" style="width: 800px" class="resize-image" />
+</div>
+<p>Try to change the title of website and publish, you will see the updates in your <code>config.yml</code> file.</p>
+<h3 id="configuration-to-create-a-new-postblog-using-netlifycms">Configuration to create a new post/blog using NetlifyCMS</h3>
+<p>Now move on the main part which is settings for creating a new blog.</p>
+<p>Add content below to your <code>static/admin/config.yml</code></p>
+<p>Start the hugo service and refresh admin page</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yml" data-lang="yml"><span style="display:flex;"><span>  - <span style="color:#f92672">name</span>: <span style="color:#ae81ff">blogConfig</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">label</span>: <span style="color:#ae81ff">My Blog</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">create</span>: <span style="color:#66d9ef">true</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">delete</span>: <span style="color:#66d9ef">true</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">folder</span>: <span style="color:#ae81ff">content/blogs</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">slug</span>: <span style="color:#e6db74">&#39;{{year}}-{{month}}-{{day}}_{{slug}}&#39;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">fields</span>:
+</span></span><span style="display:flex;"><span>      - <span style="color:#f92672">widget</span>: <span style="color:#ae81ff">string</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">name</span>: <span style="color:#ae81ff">title</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">label</span>: <span style="color:#ae81ff">Title</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">required</span>: <span style="color:#66d9ef">true</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">hint</span>: <span style="color:#ae81ff">The title of the blog.</span>
+</span></span><span style="display:flex;"><span>      - <span style="color:#f92672">widget</span>: <span style="color:#ae81ff">date</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">name</span>: <span style="color:#ae81ff">date</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">label</span>: <span style="color:#ae81ff">Date</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">required</span>: <span style="color:#66d9ef">true</span>
+</span></span><span style="display:flex;"><span>      - <span style="color:#f92672">widget</span>: <span style="color:#ae81ff">boolean</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">name</span>: <span style="color:#ae81ff">draft</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">label</span>: <span style="color:#ae81ff">Draft</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">required</span>: <span style="color:#66d9ef">false</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">default</span>: <span style="color:#66d9ef">true</span>
+</span></span><span style="display:flex;"><span>      - <span style="color:#f92672">widget</span>: <span style="color:#ae81ff">markdown</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">name</span>: <span style="color:#ae81ff">body</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">label</span>: <span style="color:#ae81ff">Content</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">required</span>: <span style="color:#66d9ef">true</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">hint</span>: <span style="color:#ae81ff">Page content</span>
+</span></span></code></pre></div><p>This config must be under <code>files</code> and the same level with <code>name: config</code>. You can check the full file on github: <a href="https://github.com/tranvnb/hugo-and-netlifycms/blob/main/static/admin/config.yml">config.yml</a></p>
+<ul>
+<li><code>folder: content/blogs</code> folder where new blogs are created</li>
+<li><code>slug: '{{year}}-{{month}}-{{day}}_{{slug}}'</code>: format pattern of blog file name</li>
+</ul>
+<p>Refresh our page you will get the result</p>
+<div class="nothing">
+    <img src="https://www.brianvo.dev/images/blog/local-netlify-cms-new-blog.gif" style="width: 800px" class="resize-image" />
+</div>
+<h3 id="deploy-website-to-netlify-service">Deploy website to Netlify Service</h3>
+<p><strong>NOTE</strong>: Assuming that you have already have <a href="https://github.com/">github</a> account and <a href="https://www.netlify.com/">netlify</a> account. Otherwise please refer to this <a href="https://docs.github.com/en/github/getting-started-with-github/set-up-git">github tutorial</a> and <a href="https://app.netlify.com/signup">netlify</a></p>
+<h4 id="1-add-website-files-to-github">1. Add website files to Github</h4>
+<p><strong>NOTE</strong>: Remember to add <code>netlify.toml</code> configuration file following <a href="https://gohugo.io/hosting-and-deployment/hosting-on-netlify/#configure-hugo-version-in-netlify">Hugo host on Netlify</a> guidelines. This config file let netlify know how to build and deploy our website.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>  $ git init
+</span></span><span style="display:flex;"><span>  $ git remote add origin <span style="color:#f92672">[</span>git@github.com:<span style="color:#f92672">[</span>your-account-name<span style="color:#f92672">]</span>/<span style="color:#f92672">[</span>your-repository-name<span style="color:#f92672">]</span>.git<span style="color:#f92672">]</span>
+</span></span><span style="display:flex;"><span>  $ git add . <span style="color:#75715e"># add all your files to local git repository</span>
+</span></span><span style="display:flex;"><span>  $ git commit -m <span style="color:#e6db74">&#39;[your comment]&#39;</span>
+</span></span><span style="display:flex;"><span>  $ git push origin <span style="color:#75715e"># push all your changes to repository on Github service</span>
+</span></span></code></pre></div><h4 id="2-create-online-website-on-netlify-service">2. Create online website on Netlify service</h4>
+<p>Open the main page of Netlify, choose <code>New site from Git</code>, choose <code>Github</code>, sign in to your github account, and final step is choosing <code>Deploy site</code></p>
+<div class="nothing">
+    <img src="https://www.brianvo.dev/images/blog/netlify-create-new-site.png" style="width: 800px" class="resize-image" />
+</div>
+<h4 id="3-login-to-netlify-cms">3. Login to Netlify CMS</h4>
+<p>NetlifyCMs provides a widget helping we login to online admin page and we can manage our website anywhere anytime.</p>
+<p>Enable <code>Netlify Identity</code>: <a href="https://docs.netlify.com/visitor-access/identity/">https://docs.netlify.com/visitor-access/identity/</a></p>
+<p>Add a script to <code>static/admin/index.html</code> file</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span>    <span style="color:#f92672">&lt;</span><span style="color:#a6e22e">script</span> <span style="color:#a6e22e">type</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;text/javascript&#34;</span> <span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;https://identity.netlify.com/v1/netlify-identity-widget.js&#34;</span><span style="color:#f92672">&gt;&lt;</span><span style="color:#960050;background-color:#1e0010">/script&gt;</span>
+</span></span></code></pre></div><h3 id="summary">Summary</h3>
+<p>Now you have a picture of how to build and deploy a simple static website by yourself using Hugo and Netlify.</p>
+<p>If you want to build a more complex website, please refer to <a href="https://gohugo.io/documentation/">Hugo document</a> and for sure a simple knowledge about Golang.</p>
+
+              </div>
+          </div>
+      </div>
+      <div class="row singleBlog__tags">
+        <div class="col-lg-6">
+          <div class="d-flex justify-content-center small">
+             
+            <ul>
+                    </ul>
+            
+          </div>
+        </div>
+      </div>
+  </div>
+</section>
+
+
+  </div>
+  <section class="footer" id="contact">
+	<div class="footer__background_shape">
+		<svg viewBox="0 0 1920 79">
+			<path d="M0 0h1920v79L0 0z" data-name="Path 1450" />
+		</svg>
+	</div>
+	<div class="container">
+		
+		
+		
+		<div class="row footer__footer">
+			<div class="col-lg-6">
+				<div class="footer__footer_copy text-light">
+					<p>All right reserved copyright © LoveFamily 2021</p>
+				</div>
+			</div>
+			<div class="col-lg-6">
+				<div class="footer__footer_social">
+					<ul class="unstyle-list">
+						
+						
+						<li class="d-inline-block mx-2"><a class="text-light" target="_blank" href="https://www.facebook.com/baotran.vonguyen.9"><i
+									class="fa fa-2x fa-facebook-official"></i></a>
+						</li>
+						
+						<li class="d-inline-block mx-2"><a class="text-light" target="_blank" href="https://www.linkedin.com/in/brian-tran-vo/"><i
+									class="fa fa-2x fa-linkedin-square"></i></a>
+						</li>
+						
+						<li class="d-inline-block mx-2"><a class="text-light" target="_blank" href="https://twitter.com/BrianTranVo"><i
+									class="fa fa-2x fa-twitter-square"></i></a>
+						</li>
+						
+						<li class="d-inline-block mx-2"><a class="text-light" target="_blank" href="https://github.com/tranvnb"><i
+									class="fa fa-2x fa-github-square"></i></a>
+						</li>
+						
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+
+<script src="https://www.brianvo.dev/plugins/jQuery/jquery.min.js"></script>
+<script src="https://www.brianvo.dev/plugins/bootstrap/bootstrap.bundle.min.js"></script>
+<script src="https://www.brianvo.dev/plugins/slick/slick.min.js"></script>
+<script src="https://www.brianvo.dev/plugins/slick/slick.min.js"></script>
+<script src="https://www.brianvo.dev/plugins/waypoint/jquery.waypoints.min.js"></script>
+<script src="https://www.brianvo.dev/plugins/magnafic-popup/jquery.magnific-popup.min.js"></script>
+<script src="https://www.brianvo.dev/plugins/tweenmax/TweenMax.min.js"></script>
+<script src="https://www.brianvo.dev/plugins/masonry/masonry.min.js"></script>
+
+<script src="https://www.brianvo.dev/js/form-handler.min.js"></script>
+
+<script src="https://www.brianvo.dev/js/script.min.js"></script>
+</body>
+
+</html>

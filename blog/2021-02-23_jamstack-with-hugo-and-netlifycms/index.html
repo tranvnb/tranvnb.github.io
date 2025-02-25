@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>JAMStack with Hugo and NetlifyCMS - Part 1</title>
+
+  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+
+  
+
+
+<!-- Social Media Tags -->
+<meta property='og:title' content='JAMStack with Hugo and NetlifyCMS - Part 1'/>
+<meta property='og:image' content='https://www.brianvo.dev/images/allpost/jam_hugo_netlifycms.jpg'/>
+<meta property='og:description' content='Introduce concept of JAMStack and how to build up a simple website on local with hugo and NetlifyCMS'/> 
+
+
+<meta name="twitter:title" content='JAMStack with Hugo and NetlifyCMS - Part 1'>
+<meta name="twitter:description" content='https://www.brianvo.dev/images/allpost/jam_hugo_netlifycms.jpg'>
+<meta name="twitter:image" content='Introduce concept of JAMStack and how to build up a simple website on local with hugo and NetlifyCMS'>
+
+
+
+
+
+  <!-- Slick Carousel -->
+  <link rel="stylesheet" href="https://www.brianvo.dev/plugins/slick/slick.css" />
+  <link rel="stylesheet" href="https://www.brianvo.dev/plugins/slick/slick-theme.css" />
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://www.brianvo.dev/plugins/font-awesome/css/font-awesome.min.css" />
+
+  <!-- Magnific Popup -->
+  <link rel="stylesheet" href="https://www.brianvo.dev/plugins/magnafic-popup/magnific-popup.css" />
+
+  <!-- Stylesheets -->
+  
+  <link href="https://www.brianvo.dev/scss/style.min.css" rel="stylesheet" />
+
+  <!--Favicon-->
+  <link rel="shortcut icon" href="https://www.brianvo.dev/images/favicon.ico" type="image/x-icon" />
+  <link rel="icon" href="https://www.brianvo.dev/images/favicon.png" type="image/x-icon" />
+  
+    
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-9CG05CN5E7"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() { dataLayer.push(arguments); }
+      gtag('js', new Date());
+
+      gtag('config', 'G-9CG05CN5E7');
+    </script>
+    
+  
+  
+</head>
+
+
+<body>
+  
+  <nav class="navbar navbar-expand-lg fixed-top">
+  <div class="container">
+    <a href="https://www.brianvo.dev/" class="navbar-brand">
+      <img style="width: 68px; border-radius: 31%;" src="https://www.brianvo.dev/images/site-navigation/logo.jpg" alt="site-logo">
+    </a>
+    <button type="button" class="navbar-toggler collapsed" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+      <span class="navbar-toggler-icon"></span>
+      <span class="navbar-toggler-icon"></span>
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+      <ul class="nav navbar-nav main-navigation my-0 mx-auto">
+        
+        
+        <li class="nav-item">
+          <a href="https://www.brianvo.dev/#home"
+            class="nav-link text-dark text-sm-center p-2 ">Home</a>
+        </li>
+        
+        <li class="nav-item">
+          <a href="https://www.brianvo.dev/#about"
+            class="nav-link text-dark text-sm-center p-2 ">About</a>
+        </li>
+        
+        <li class="nav-item">
+          <a href="https://www.brianvo.dev/#resume"
+            class="nav-link text-dark text-sm-center p-2 ">Resume</a>
+        </li>
+        
+        <li class="nav-item">
+          <a href="https://www.brianvo.dev/#blog"
+            class="nav-link text-dark text-sm-center p-2 ">Blog</a>
+        </li>
+        
+        <li class="nav-item">
+          <a href="https://www.brianvo.dev/#contact"
+            class="nav-link text-dark text-sm-center p-2 ">Contact</a>
+        </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+  <div id="content">
+    
+
+<header class="breadCrumb">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-10 col-md-12 offset-lg-1 offset-md-0 text-center">
+        <h3 class="breadCrumb__title">JAMStack with Hugo and NetlifyCMS - Part 1</h3>
+        <nav aria-label="breadcrumb" class="d-flex justify-content-center">
+          <ol class="breadcrumb align-items-center">
+            <li class="breadcrumb-item"><a href=https://www.brianvo.dev/>Home</a></li>
+            <li class="breadcrumb-item"><a href=https://www.brianvo.dev/blog>All Post</a></li>
+            <li class="breadcrumb-item active" aria-current="page">JAMStack with Hugo and NetlifyCMS - Part 1</li>
+          </ol>
+        </nav>
+        
+      </div>
+    </div>
+  </div>
+</header>
+
+<section class="section singleBlog">
+  <div class="container">
+      <div class="row singleBlog__publish">
+        <div class="col-lg-6">
+          <div class="d-flex justify-content-center">
+            <span class="small">Published Date: February 22, 2021</span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="row">
+          <div class="col-lg-12">
+              <div class="singleBlog__feature">
+                  <img src=https://www.brianvo.dev/ alt="feature-image">
+              </div>
+          </div>
+      </div>
+      
+      <div class="row mt-5">
+          <div class="col-lg-12">
+              <div class="singleBlog__content">
+
+                
+
+                  <h3 id="introduction">Introduction</h3>
+<p>In this post, I will introduce concept of JAMStack and how to build up a simple website on localhost with hugo and NetlifyCMS. But at first, we will quickly go through a few definitions.</p>
+<p>This is the github repository for this site: <a href="https://github.com/tranvnb/hugo-and-netlifycms">https://github.com/tranvnb/hugo-and-netlifycms</a></p>
+<h3 id="what-is-jamstack-and-why-jamstack">What is JAMStack and Why JAMStack</h3>
+<p>JAM acronym stand for Javascript, API, and Markdown which in a combination will create a SEO friendly web content. Moreover, because most of the pages are static content, it&rsquo;s easy to apply any kind of cache mechanism. Outside of that, there&rsquo;s a lot of advantages (and yes disadvantages) which will be covered in another post.</p>
+<h3 id="what-is-hugo">What is Hugo</h3>
+<p>Hugo is a static site generator framework written in GO language.
+This is the definition from <a href="https://gohugo.io/about/what-is-hugo/#what-does-hugo-do">Hugo website</a>:</p>
+<blockquote>
+<p>In technical terms, Hugo takes a source directory of files and templates and uses these as input to create a complete website.</p></blockquote>
+<h3 id="what-is-netlifycms">What is NetlifyCMS</h3>
+<p>Netlify CMS is a static site content management, utilizes the Git workflow to manage site content. Basically, it provides editors a UI tool for administrating articles and then updating to local git repositories.</p>
+<p>NetlifyCMS is different from Netlify, it is a CMS while Netlify is a online platform to  deploy, serve, and maintain your front end site and web apps.</p>
+<h3 id="create-a-new-hugo-site">Create a new Hugo site</h3>
+<p>There are various ways to install Hugo described on <a href="https://gohugo.io/getting-started/installing">Hugo website</a>, I will skip this part and go directly to creating a new website.</p>
+<ol>
+<li>
+<p>Create new site</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>  $ hugo new site my-site
+</span></span><span style="display:flex;"><span>  $ cd my-site
+</span></span></code></pre></div><p>You will get a new folder as below</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>  .                     
+</span></span><span style="display:flex;"><span>  ├── archetypes        
+</span></span><span style="display:flex;"><span>  │   └── default.md    
+</span></span><span style="display:flex;"><span>  ├── config.toml       
+</span></span><span style="display:flex;"><span>  ├── content           
+</span></span><span style="display:flex;"><span>  ├── data              
+</span></span><span style="display:flex;"><span>  ├── layouts           
+</span></span><span style="display:flex;"><span>  ├── static            
+</span></span><span style="display:flex;"><span>  └── themes
+</span></span></code></pre></div></li>
+<li>
+<p>Create a new content</p>
+<p>The <code>default.md</code> is the default template of a new post/content. Let create a new articles and see how it works.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>  $ hugo new posts/my-first-post.md
+</span></span><span style="display:flex;"><span>  $ cat content/posts/my-first-post.md
+</span></span><span style="display:flex;"><span>  ---
+</span></span><span style="display:flex;"><span>  title: &#34;My First Post&#34;
+</span></span><span style="display:flex;"><span>  date: 2021-02-22T13:18:04-08:00
+</span></span><span style="display:flex;"><span>  draft: true
+</span></span><span style="display:flex;"><span>  ---
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  This is my first post using Hugo generator
+</span></span></code></pre></div><p>Add a text below the 3 dash as above.</p>
+</li>
+<li>
+<p>Start server</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>  $ hugo serve -D
+</span></span></code></pre></div><p>The <code>-D</code> parameter is to generate including draft file which has <code>draft: true</code> on its content header</p>
+<p>Open browser at <code>localhost:1313</code>. At this time, you wont see anything shows up because we didn&rsquo;t create a default layout for the website.</p>
+</li>
+<li>
+<p>Create default layout for the website</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>  $ touch layouts/index.html
+</span></span></code></pre></div><p>add the content to index.html file:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>  &lt;<span style="color:#f92672">body</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">h1</span>&gt;This is posts section&lt;/<span style="color:#f92672">h1</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">ul</span>&gt;
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e">&lt;!-- we iterate all posts in &#34;posts&#34; section --&gt;</span>
+</span></span><span style="display:flex;"><span>        {{ range (where .Pages &#34;Section&#34; &#34;posts&#34;) }}
+</span></span><span style="display:flex;"><span>        &lt;<span style="color:#f92672">li</span>&gt;
+</span></span><span style="display:flex;"><span>        &lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;{{ .RelPermalink }}&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>            {{ .Title }}
+</span></span><span style="display:flex;"><span>        &lt;/<span style="color:#f92672">a</span>&gt;
+</span></span><span style="display:flex;"><span>        &lt;/<span style="color:#f92672">li</span>&gt;
+</span></span><span style="display:flex;"><span>        {{ end }}
+</span></span><span style="display:flex;"><span>    &lt;/<span style="color:#f92672">ul</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">h1</span>&gt;This is blogs section&lt;/<span style="color:#f92672">h1</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">ul</span>&gt;
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e">&lt;!-- we iterate all posts in &#34;blogs&#34; section --&gt;</span>
+</span></span><span style="display:flex;"><span>        {{ range (where .Pages &#34;Section&#34; &#34;blogs&#34;) }}
+</span></span><span style="display:flex;"><span>        &lt;<span style="color:#f92672">li</span>&gt;
+</span></span><span style="display:flex;"><span>        &lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;{{ .RelPermalink }}&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>            {{ .Title }}
+</span></span><span style="display:flex;"><span>        &lt;/<span style="color:#f92672">a</span>&gt;
+</span></span><span style="display:flex;"><span>        &lt;/<span style="color:#f92672">li</span>&gt;
+</span></span><span style="display:flex;"><span>        {{ end }}
+</span></span><span style="display:flex;"><span>    &lt;/<span style="color:#f92672">ul</span>&gt;
+</span></span><span style="display:flex;"><span>  &lt;/<span style="color:#f92672">body</span>&gt;
+</span></span></code></pre></div><p><code>.RelPermalink</code> is a permanent link to pages. Refer <a href="https://gohugo.io/variables/page">Page Variables</a> on Hugo page.</p>
+<p><img src="/images/blog/list-of-sections.png" alt="list of sections"></p>
+<pre><code>Now you can see the home page show a link to all posts but when click on the link, there's nothing. This because we haven't create a layout to show all of posts yet. Let create a list layout for posts.
+</code></pre>
+</li>
+<li>
+<p>Create a layout for all post posts</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>  $ touch layouts/posts/list.html
+</span></span></code></pre></div><p>Add the content:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  &lt;<span style="color:#f92672">body</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">h1</span>&gt;This list of all posts&lt;/<span style="color:#f92672">h1</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">ul</span>&gt;
+</span></span><span style="display:flex;"><span>    {{ range .Pages }}
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">li</span>&gt;
+</span></span><span style="display:flex;"><span>        &lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;{{ .Permalink }}&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>        {{ .Title }}
+</span></span><span style="display:flex;"><span>        &lt;/<span style="color:#f92672">a</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;/<span style="color:#f92672">li</span>&gt;
+</span></span><span style="display:flex;"><span>    {{ end }}
+</span></span><span style="display:flex;"><span>    &lt;/<span style="color:#f92672">ul</span>&gt;
+</span></span><span style="display:flex;"><span>  &lt;/<span style="color:#f92672">body</span>&gt;
+</span></span></code></pre></div><p>Now when click on the Posts link on the home page, we will get a list of posts we have just created.</p>
+<p><img src="/images/blog/list-of-all-posts.png" alt=""></p>
+<p>But still we can&rsquo;t see the content of posts because we haven&rsquo;t create the layout of it yet.</p>
+</li>
+<li>
+<p>Create a layout for a single posts.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>  $ touch layouts/posts/single.html
+</span></span></code></pre></div><p>Add the content:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>  <span style="color:#75715e">&lt;!DOCTYPE html&gt;</span>
+</span></span><span style="display:flex;"><span>  &lt;<span style="color:#f92672">html</span> <span style="color:#a6e22e">lang</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;en&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>  &lt;<span style="color:#f92672">head</span>&gt;
+</span></span><span style="display:flex;"><span>      &lt;<span style="color:#f92672">meta</span> <span style="color:#a6e22e">charset</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;UTF-8&#34;</span> /&gt;
+</span></span><span style="display:flex;"><span>      &lt;<span style="color:#f92672">meta</span> <span style="color:#a6e22e">name</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;viewport&#34;</span> <span style="color:#a6e22e">content</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;width=device-width, initial-scale=1.0&#34;</span> /&gt;
+</span></span><span style="display:flex;"><span>      &lt;<span style="color:#f92672">meta</span> <span style="color:#a6e22e">http-equiv</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;X-UA-Compatible&#34;</span> <span style="color:#a6e22e">content</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;ie=edge&#34;</span> /&gt;
+</span></span><span style="display:flex;"><span>      &lt;<span style="color:#f92672">title</span>&gt;{{ .Title }}&lt;/<span style="color:#f92672">title</span>&gt;
+</span></span><span style="display:flex;"><span>  &lt;/<span style="color:#f92672">head</span>&gt;
+</span></span><span style="display:flex;"><span>  &lt;<span style="color:#f92672">body</span>&gt;
+</span></span><span style="display:flex;"><span>      &lt;<span style="color:#f92672">h1</span>&gt;{{ .Title }}&lt;/<span style="color:#f92672">h1</span>&gt;
+</span></span><span style="display:flex;"><span>      &lt;<span style="color:#f92672">p</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;date&#34;</span>&gt;{{ .Date }}&lt;/<span style="color:#f92672">p</span>&gt;
+</span></span><span style="display:flex;"><span>      &lt;<span style="color:#f92672">article</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;content&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>      {{ .Content }}
+</span></span><span style="display:flex;"><span>      &lt;/<span style="color:#f92672">article</span>&gt;
+</span></span><span style="display:flex;"><span>  &lt;/<span style="color:#f92672">body</span>&gt;
+</span></span><span style="display:flex;"><span>  &lt;/<span style="color:#f92672">html</span>&gt;
+</span></span></code></pre></div><p><img src="/images/blog/posts-content.png" alt="content of a post"></p>
+</li>
+<li>
+<p>Create the same files and folders for blogs as folder structure below:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>  .
+</span></span><span style="display:flex;"><span>  ├── archetypes
+</span></span><span style="display:flex;"><span>  │   └── default.md
+</span></span><span style="display:flex;"><span>  ├── config.toml
+</span></span><span style="display:flex;"><span>  ├── content
+</span></span><span style="display:flex;"><span>  │   ├── blogs
+</span></span><span style="display:flex;"><span>  │   │   └── my-first-blogs.md
+</span></span><span style="display:flex;"><span>  │   └── posts
+</span></span><span style="display:flex;"><span>  │       └── my-first-post.md
+</span></span><span style="display:flex;"><span>  ├── data
+</span></span><span style="display:flex;"><span>  ├── hugo.exe
+</span></span><span style="display:flex;"><span>  ├── layouts
+</span></span><span style="display:flex;"><span>  │   ├── blogs
+</span></span><span style="display:flex;"><span>  │   │   ├── list.html
+</span></span><span style="display:flex;"><span>  │   │   └── single.html
+</span></span><span style="display:flex;"><span>  │   ├── index.html
+</span></span><span style="display:flex;"><span>  │   └── posts
+</span></span><span style="display:flex;"><span>  │       ├── list.html
+</span></span><span style="display:flex;"><span>  │       └── single.html
+</span></span><span style="display:flex;"><span>  ├── resources
+</span></span><span style="display:flex;"><span>  │   └── _gen
+</span></span><span style="display:flex;"><span>  │       ├── assets
+</span></span><span style="display:flex;"><span>  │       └── images
+</span></span><span style="display:flex;"><span>  ├── static
+</span></span><span style="display:flex;"><span>  └── themes
+</span></span></code></pre></div></li>
+</ol>
+<h3 id="summary">Summary</h3>
+<p>Now you have a very basic site with Hugo
+In In <a href="https://www.brianvo.dev/blog/2021-03-13_jamstack-with-hugo-and-netlifycms-part-2/" title="Part 2">Part 2</a>, I will introduce how to integrate Hugo with NetlifyCMS, and configuration to work with it locally.</p>
+
+              </div>
+          </div>
+      </div>
+      <div class="row singleBlog__tags">
+        <div class="col-lg-6">
+          <div class="d-flex justify-content-center small">
+             
+            <ul>
+                  </ul>
+            
+          </div>
+        </div>
+      </div>
+  </div>
+</section>
+
+
+  </div>
+  <section class="footer" id="contact">
+	<div class="footer__background_shape">
+		<svg viewBox="0 0 1920 79">
+			<path d="M0 0h1920v79L0 0z" data-name="Path 1450" />
+		</svg>
+	</div>
+	<div class="container">
+		
+		
+		
+		<div class="row footer__footer">
+			<div class="col-lg-6">
+				<div class="footer__footer_copy text-light">
+					<p>All right reserved copyright © LoveFamily 2021</p>
+				</div>
+			</div>
+			<div class="col-lg-6">
+				<div class="footer__footer_social">
+					<ul class="unstyle-list">
+						
+						
+						<li class="d-inline-block mx-2"><a class="text-light" target="_blank" href="https://www.facebook.com/baotran.vonguyen.9"><i
+									class="fa fa-2x fa-facebook-official"></i></a>
+						</li>
+						
+						<li class="d-inline-block mx-2"><a class="text-light" target="_blank" href="https://www.linkedin.com/in/brian-tran-vo/"><i
+									class="fa fa-2x fa-linkedin-square"></i></a>
+						</li>
+						
+						<li class="d-inline-block mx-2"><a class="text-light" target="_blank" href="https://twitter.com/BrianTranVo"><i
+									class="fa fa-2x fa-twitter-square"></i></a>
+						</li>
+						
+						<li class="d-inline-block mx-2"><a class="text-light" target="_blank" href="https://github.com/tranvnb"><i
+									class="fa fa-2x fa-github-square"></i></a>
+						</li>
+						
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+
+<script src="https://www.brianvo.dev/plugins/jQuery/jquery.min.js"></script>
+<script src="https://www.brianvo.dev/plugins/bootstrap/bootstrap.bundle.min.js"></script>
+<script src="https://www.brianvo.dev/plugins/slick/slick.min.js"></script>
+<script src="https://www.brianvo.dev/plugins/slick/slick.min.js"></script>
+<script src="https://www.brianvo.dev/plugins/waypoint/jquery.waypoints.min.js"></script>
+<script src="https://www.brianvo.dev/plugins/magnafic-popup/jquery.magnific-popup.min.js"></script>
+<script src="https://www.brianvo.dev/plugins/tweenmax/TweenMax.min.js"></script>
+<script src="https://www.brianvo.dev/plugins/masonry/masonry.min.js"></script>
+
+<script src="https://www.brianvo.dev/js/form-handler.min.js"></script>
+
+<script src="https://www.brianvo.dev/js/script.min.js"></script>
+</body>
+
+</html>
