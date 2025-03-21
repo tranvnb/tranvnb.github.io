@@ -1,598 +1,298 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8" />
-  <title>How to use Redux and its benefits</title>
-
-  <!-- mobile responsive meta -->
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-
-  
-
-
-<!-- Social Media Tags -->
-<meta property='og:title' content='How to use Redux and its benefits'/>
-<meta property='og:image' content='https://tranvnb.github.io/images/allpost/redux-thumb.jpg'/>
-<meta property='og:description' content='Redux is one of the most popular state management libraries and specifically for ReactJs. It helps to centralize all the component states of the application and provide the ability to track all of state changes over time.'/> 
-
-
-<meta name="twitter:title" content='How to use Redux and its benefits'>
-<meta name="twitter:description" content='https://tranvnb.github.io/images/allpost/redux-thumb.jpg'>
-<meta name="twitter:image" content='Redux is one of the most popular state management libraries and specifically for ReactJs. It helps to centralize all the component states of the application and provide the ability to track all of state changes over time.'>
-
-
-
-
-
-  <!-- Slick Carousel -->
-  <link rel="stylesheet" href="https://tranvnb.github.io/plugins/slick/slick.css" />
-  <link rel="stylesheet" href="https://tranvnb.github.io/plugins/slick/slick-theme.css" />
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://tranvnb.github.io/plugins/font-awesome/css/font-awesome.min.css" />
-
-  <!-- Magnific Popup -->
-  <link rel="stylesheet" href="https://tranvnb.github.io/plugins/magnafic-popup/magnific-popup.css" />
-
-  <!-- Stylesheets -->
-  
-  <link href="https://tranvnb.github.io/scss/style.min.css" rel="stylesheet" />
-
-  <!--Favicon-->
-  <link rel="shortcut icon" href="https://tranvnb.github.io/images/favicon.ico" type="image/x-icon" />
-  <link rel="icon" href="https://tranvnb.github.io/images/favicon.png" type="image/x-icon" />
-  
-    
-    <!-- Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-9CG05CN5E7"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() { dataLayer.push(arguments); }
-      gtag('js', new Date());
-
-      gtag('config', 'G-9CG05CN5E7');
-    </script>
-    
-  
-  
-</head>
-
-
-<body>
-  
-  <nav class="navbar navbar-expand-lg fixed-top">
-  <div class="container">
-    <a href="https://tranvnb.github.io/" class="navbar-brand">
-      <img style="width: 68px; border-radius: 31%;" src="https://tranvnb.github.io/images/site-navigation/logo.jpg" alt="site-logo">
-    </a>
-    <button type="button" class="navbar-toggler collapsed" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-      <span class="navbar-toggler-icon"></span>
-      <span class="navbar-toggler-icon"></span>
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
-      <ul class="nav navbar-nav main-navigation my-0 mx-auto">
-        
-        
-        <li class="nav-item">
-          <a href="https://tranvnb.github.io/#home"
-            class="nav-link text-dark text-sm-center p-2 ">Home</a>
-        </li>
-        
-        <li class="nav-item">
-          <a href="https://tranvnb.github.io/#about"
-            class="nav-link text-dark text-sm-center p-2 ">About</a>
-        </li>
-        
-        <li class="nav-item">
-          <a href="https://tranvnb.github.io/#resume"
-            class="nav-link text-dark text-sm-center p-2 ">Resume</a>
-        </li>
-        
-        <li class="nav-item">
-          <a href="https://tranvnb.github.io/#blog"
-            class="nav-link text-dark text-sm-center p-2 ">Blog</a>
-        </li>
-        
-        <li class="nav-item">
-          <a href="https://tranvnb.github.io/#contact"
-            class="nav-link text-dark text-sm-center p-2 ">Contact</a>
-        </li>
-        
-      </ul>
-    </div>
-  </div>
-</nav>
-  <div id="content">
-    
-
-<header class="breadCrumb">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-10 col-md-12 offset-lg-1 offset-md-0 text-center">
-        <h3 class="breadCrumb__title">How to use Redux and its benefits</h3>
-        <nav aria-label="breadcrumb" class="d-flex justify-content-center">
-          <ol class="breadcrumb align-items-center">
-            <li class="breadcrumb-item"><a href=https://tranvnb.github.io/>Home</a></li>
-            <li class="breadcrumb-item"><a href=https://tranvnb.github.io/blog>All Post</a></li>
-            <li class="breadcrumb-item active" aria-current="page">How to use Redux and its benefits</li>
-          </ol>
-        </nav>
-        
-      </div>
-    </div>
-  </div>
-</header>
-
-<section class="section singleBlog">
-  <div class="container">
-      <div class="row singleBlog__publish">
-        <div class="col-lg-6">
-          <div class="d-flex justify-content-center">
-            <span class="small">Published Date: May 2, 2021</span>
-          </div>
-        </div>
-      </div>
-      
-      <div class="row">
-          <div class="col-lg-12">
-              <div class="singleBlog__feature">
-                  <img src=https://tranvnb.github.io/images/single-blog/redux-feature.jpg alt="feature-image">
-              </div>
-          </div>
-      </div>
-      
-      <div class="row mt-5">
-          <div class="col-lg-12">
-              <div class="singleBlog__content">
-
-                
-                
-                
-                 
-
-                  <h3 id="introduction">Introduction</h3>
-<p>Redux is one of the most popular state management libraries and specifically for ReactJs. It helps to centralize all the component states of the application and provide the ability to track all of state changes over time.</p>
-<p>In this tutorial, we will be creating a ReactJs app with both Redux and Redux toolkit to demonstrate the advantages/disadvantages of Redux toolkit over Redux.</p>
-<p>This is the <a href="https://vivacious-befitting-softball.glitch.me/">demo</a> of this project.</p>
-<h3 id="redux-in-a-nutshell">Redux in a nutshell</h3>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>	                                                                                
-</span></span><span style="display:flex;"><span>              GUI                                        Reducers               
-</span></span><span style="display:flex;"><span>        +-------------+                               +-------------+           
-</span></span><span style="display:flex;"><span>        | User        |          Dispatch             | Update state|           
-</span></span><span style="display:flex;"><span>        | interactions ------------------------------&gt;| base on     |           
-</span></span><span style="display:flex;"><span>        |             |           Action              | action type |           
-</span></span><span style="display:flex;"><span>        +-------------+      +--------------+         +-------------+           
-</span></span><span style="display:flex;"><span>               ^             |  +Type       |                |                  
-</span></span><span style="display:flex;"><span>               |             |  +Payload    |         <span style="color:#66d9ef">return</span> |new states        
-</span></span><span style="display:flex;"><span> update        |             +--------------+                |                  
-</span></span><span style="display:flex;"><span> front-end/GUI |                                             |                  
-</span></span><span style="display:flex;"><span>               |                                      +------v-----+            
-</span></span><span style="display:flex;"><span>               |                                      |            |            
-</span></span><span style="display:flex;"><span>               |         Notify front-end             |store new   |Store       
-</span></span><span style="display:flex;"><span>                &lt;-------------------------------------|states      |            
-</span></span><span style="display:flex;"><span>                                                      |            |            
-</span></span><span style="display:flex;"><span>                                                      +------------+            
-</span></span></code></pre></div><p>Redux comprise of 3 main components: <strong>Action</strong>, <strong>Reducer</strong>, and <strong>Store</strong> (storing the states)</p>
-<p><strong>Action</strong>: an planed javascript object containing detail of an action. For example an action of pouring water into a bottle. Its detail will be:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>	{
-</span></span><span style="display:flex;"><span>		<span style="color:#a6e22e">type</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;pour_water_into_bottle&#34;</span>,
-</span></span><span style="display:flex;"><span>		<span style="color:#a6e22e">payload</span><span style="color:#f92672">:</span> {
-</span></span><span style="display:flex;"><span>			<span style="color:#a6e22e">used_hand</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;right&#34;</span>,
-</span></span><span style="display:flex;"><span>			<span style="color:#a6e22e">amount_of_water</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;4 cup&#34;</span>
-</span></span><span style="display:flex;"><span>		}
-</span></span><span style="display:flex;"><span>	}
-</span></span></code></pre></div><p><strong>Reducer</strong>: a functions calculates and then return new state of our application. Follow the pouring water example above, the reducers will receive action from user with all the details and current state value and return the result:</p>
-<p>Current/initial state:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">application_state</span><span style="color:#f92672">:</span> {
-</span></span><span style="display:flex;"><span>		<span style="color:#a6e22e">water_in_bottle</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;0 cup&#34;</span>,
-</span></span><span style="display:flex;"><span>		<span style="color:#a6e22e">bottle_size</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;4 cup&#34;</span>,
-</span></span><span style="display:flex;"><span>		<span style="color:#a6e22e">bottle_is_full</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;no&#34;</span>
-</span></span><span style="display:flex;"><span>	}
-</span></span></code></pre></div><p>After pouring action (new state) :</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">application_state</span><span style="color:#f92672">:</span> {
-</span></span><span style="display:flex;"><span>		<span style="color:#a6e22e">water_in_bottle</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;4 cup&#34;</span>,
-</span></span><span style="display:flex;"><span>		<span style="color:#a6e22e">bottle_size</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;4 cup&#34;</span>,
-</span></span><span style="display:flex;"><span>		<span style="color:#a6e22e">bottle_is_full</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;yes&#34;</span>
-</span></span><span style="display:flex;"><span>	}
-</span></span></code></pre></div><p><strong>Store</strong> : is where all the state (plain javascript object) and functions to trigger actions are stored. At this stage, the new state is updated and notify the front-end to re-render a new image to user (the bottle has more water and is full compare to the previous state is empty)</p>
-<p>That was a simple explaination of how redux works.</p>
-<h3 id="the-scaffolding-directories">The scaffolding directories</h3>
-<p>Presumably you have created React project using <code>create-react-app</code> cli.</p>
-<p>We are going to create 2 redux store using both Redux and Redux Toolkit, so this is the result structure after fully implementing the project and I am going to go through steps by steps shortly.</p>
-<p>This is the structure of the project or you could find it at github link <a href="https://github.com/tranvnb/redux-and-redux-toolkit">here</a></p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>	.                                       
-</span></span><span style="display:flex;"><span>	├── LICENSE                             
-</span></span><span style="display:flex;"><span>	├── README.md                           
-</span></span><span style="display:flex;"><span>	├── package-lock.json                   
-</span></span><span style="display:flex;"><span>	├── package.json                        
-</span></span><span style="display:flex;"><span>	├── public                              
-</span></span><span style="display:flex;"><span>	│   ├── favicon.ico                     
-</span></span><span style="display:flex;"><span>	│   ├── index.html                      
-</span></span><span style="display:flex;"><span>	│   ├── logo192.png                     
-</span></span><span style="display:flex;"><span>	│   ├── logo512.png                     
-</span></span><span style="display:flex;"><span>	│   ├── manifest.json                   
-</span></span><span style="display:flex;"><span>	│   └── robots.txt                      
-</span></span><span style="display:flex;"><span>	└── src                                 
-</span></span><span style="display:flex;"><span>		├── App.css                         
-</span></span><span style="display:flex;"><span>		├── App.js                          
-</span></span><span style="display:flex;"><span>		├── App.test.js                     
-</span></span><span style="display:flex;"><span>		├── components                      
-</span></span><span style="display:flex;"><span>		│   ├── CounterRedux                
-</span></span><span style="display:flex;"><span>		│   │   ├── counterRedux.js         
-</span></span><span style="display:flex;"><span>		│   │   └── index.js                
-</span></span><span style="display:flex;"><span>		│   └── CounterReduxToolkit         
-</span></span><span style="display:flex;"><span>		│       ├── counterReduxToolkit.js  
-</span></span><span style="display:flex;"><span>		│       └── index.js                
-</span></span><span style="display:flex;"><span>		├── index.css                       
-</span></span><span style="display:flex;"><span>		├── index.js                        
-</span></span><span style="display:flex;"><span>		├── logo.svg                        
-</span></span><span style="display:flex;"><span>		├── redux                           
-</span></span><span style="display:flex;"><span>		│   ├── counterRedux.js             
-</span></span><span style="display:flex;"><span>		│   ├── counterReduxToolkit.js      
-</span></span><span style="display:flex;"><span>		│   ├── storeRedux.js               
-</span></span><span style="display:flex;"><span>		│   └── storeReduxToolkit.js        
-</span></span><span style="display:flex;"><span>		├── reportWebVitals.js              
-</span></span><span style="display:flex;"><span>		└── setupTests.js               
-</span></span></code></pre></div><h3 id="counter-component-using-redux">Counter component using Redux</h3>
-<p>Let begin with the Redux, we need to have add redux libraries:</p>
-<h4 id="1-install-some-required-libraries">1. Install some required libraries</h4>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>	$ npm install redux
-</span></span><span style="display:flex;"><span>	$ npm install react-redux
-</span></span></code></pre></div><h4 id="2-define-action-types">2. Define action types</h4>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>	<span style="color:#75715e">// create action alias
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>	<span style="color:#66d9ef">const</span> <span style="color:#a6e22e">ACTION_INCREASE</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;ACTION_INCREASE&#34;</span>;
-</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">const</span> <span style="color:#a6e22e">ACTION_DECREASE</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;ACTION_DECREASE&#34;</span>;
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">const</span> <span style="color:#a6e22e">ACTION_ASYNC_SAVE_STARTED</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;ACTION_ASYNC_SAVE_STARTED&#34;</span>;
-</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">const</span> <span style="color:#a6e22e">ACTION_ASYNC_SAVE_SUCCEED</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;ACTION_ASYNC_SAVE_SUCCEED&#34;</span>;
-</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">const</span> <span style="color:#a6e22e">ACTION_ASYNC_SAVE_FAIL</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;ACTION_ASYNC_SAVE_FAIL&#34;</span>;
-</span></span><span style="display:flex;"><span>	
-</span></span></code></pre></div><p>You might wonder why we need these definitions.</p>
-<ul>
-<li>
-<p><strong>Firstly</strong>, because we are going to use these constants in various places, so we need to define them only in 1 place. That makes the code management and refactoring easier later on.</p>
-</li>
-<li>
-<p><strong>Secondly</strong>, these definitions are used in the redux debug tool and it will show the values of these contants relatively to redux actions. Thus, the readability and clarity are important.</p>
-</li>
-</ul>
-<h4 id="3-create-the-actions">3. Create the actions</h4>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span>	
-</span></span><span style="display:flex;"><span>	<span style="color:#75715e">// create action and its payload
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>	<span style="color:#66d9ef">export</span> <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">actionIncrease</span> <span style="color:#f92672">=</span> (<span style="color:#a6e22e">num</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>) =&gt; ({
-</span></span><span style="display:flex;"><span>		<span style="color:#a6e22e">type</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">ACTION_INCREASE</span>,
-</span></span><span style="display:flex;"><span>		<span style="color:#a6e22e">payload</span><span style="color:#f92672">:</span> {
-</span></span><span style="display:flex;"><span>			<span style="color:#a6e22e">num</span>
-</span></span><span style="display:flex;"><span>		}
-</span></span><span style="display:flex;"><span>	})
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">export</span> <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">actionDecrease</span> <span style="color:#f92672">=</span> (<span style="color:#a6e22e">num</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>) =&gt; ({
-</span></span><span style="display:flex;"><span>		<span style="color:#a6e22e">type</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">ACTION_DECREASE</span>,
-</span></span><span style="display:flex;"><span>		<span style="color:#a6e22e">payload</span><span style="color:#f92672">:</span> {
-</span></span><span style="display:flex;"><span>			<span style="color:#a6e22e">num</span>
-</span></span><span style="display:flex;"><span>		}
-</span></span><span style="display:flex;"><span>	})
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">export</span> <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">actionAsyncSaveStarted</span> <span style="color:#f92672">=</span> (<span style="color:#a6e22e">message</span>) =&gt; ({
-</span></span><span style="display:flex;"><span>		<span style="color:#a6e22e">type</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">ACTION_ASYNC_SAVE_STARTED</span>,
-</span></span><span style="display:flex;"><span>		<span style="color:#a6e22e">payload</span><span style="color:#f92672">:</span> {
-</span></span><span style="display:flex;"><span>			<span style="color:#a6e22e">message</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">message</span>
-</span></span><span style="display:flex;"><span>		}
-</span></span><span style="display:flex;"><span>	})
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">export</span> <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">actionAsyncSaveSucceed</span> <span style="color:#f92672">=</span> (<span style="color:#a6e22e">message</span>) =&gt; ({
-</span></span><span style="display:flex;"><span>		<span style="color:#a6e22e">type</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">ACTION_ASYNC_SAVE_SUCCEED</span>,
-</span></span><span style="display:flex;"><span>		<span style="color:#a6e22e">payload</span><span style="color:#f92672">:</span> {
-</span></span><span style="display:flex;"><span>			<span style="color:#a6e22e">message</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">message</span>
-</span></span><span style="display:flex;"><span>		}    
-</span></span><span style="display:flex;"><span>	})
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">export</span> <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">actionAsyncSaveFail</span> <span style="color:#f92672">=</span> (<span style="color:#a6e22e">message</span>) =&gt; ({
-</span></span><span style="display:flex;"><span>		<span style="color:#a6e22e">type</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">ACTION_ASYNC_SAVE_FAIL</span>,
-</span></span><span style="display:flex;"><span>		<span style="color:#a6e22e">payload</span><span style="color:#f92672">:</span> {
-</span></span><span style="display:flex;"><span>			<span style="color:#a6e22e">error</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">message</span>
-</span></span><span style="display:flex;"><span>		}
-</span></span><span style="display:flex;"><span>	})
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">export</span> <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">actionSave</span> <span style="color:#f92672">=</span> () =&gt; {
-</span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">return</span> (<span style="color:#a6e22e">dispathObject</span>) =&gt; {
-</span></span><span style="display:flex;"><span>			<span style="color:#a6e22e">dispathObject</span>(<span style="color:#a6e22e">actionAsyncSaveStarted</span>(<span style="color:#e6db74">&#34;saving...&#34;</span>));
-</span></span><span style="display:flex;"><span>			
-</span></span><span style="display:flex;"><span>			<span style="color:#66d9ef">const</span> <span style="color:#a6e22e">fakeRequest</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> Promise((<span style="color:#a6e22e">resolve</span>, <span style="color:#a6e22e">reject</span>) =&gt; {
-</span></span><span style="display:flex;"><span>				<span style="color:#a6e22e">setTimeout</span>(() =&gt; {
-</span></span><span style="display:flex;"><span>					<span style="color:#a6e22e">resolve</span>(<span style="color:#e6db74">&#34;save succeeded&#34;</span>)
-</span></span><span style="display:flex;"><span>					<span style="color:#75715e">// reject(&#34;save failed&#34;);
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>				}, <span style="color:#ae81ff">2000</span>);
-</span></span><span style="display:flex;"><span>			})
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>			<span style="color:#66d9ef">return</span> <span style="color:#a6e22e">fakeRequest</span>
-</span></span><span style="display:flex;"><span>				.<span style="color:#a6e22e">then</span>(<span style="color:#a6e22e">result</span> =&gt; {
-</span></span><span style="display:flex;"><span>					<span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#34;success&#34;</span>, <span style="color:#a6e22e">result</span>)
-</span></span><span style="display:flex;"><span>					<span style="color:#a6e22e">dispathObject</span>(<span style="color:#a6e22e">actionAsyncSaveSucceed</span>(<span style="color:#a6e22e">result</span>))
-</span></span><span style="display:flex;"><span>				})
-</span></span><span style="display:flex;"><span>				.<span style="color:#66d9ef">catch</span>(<span style="color:#a6e22e">error</span> =&gt; {
-</span></span><span style="display:flex;"><span>					<span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#34;error&#34;</span>, <span style="color:#a6e22e">error</span>)
-</span></span><span style="display:flex;"><span>					<span style="color:#a6e22e">dispathObject</span>(<span style="color:#a6e22e">actionAsyncSaveFail</span>(<span style="color:#a6e22e">error</span>))
-</span></span><span style="display:flex;"><span>				}) 
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>		}
-</span></span><span style="display:flex;"><span>	}
-</span></span></code></pre></div><p>Notice the <strong>actionSave</strong>, we will discuss about it at the redux-thunk section.</p>
-<h4 id="4-now-the-reducer">4. Now the reducer</h4>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">const</span> <span style="color:#a6e22e">initialState</span> <span style="color:#f92672">=</span> {
-</span></span><span style="display:flex;"><span>		<span style="color:#a6e22e">number</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">0</span>,
-</span></span><span style="display:flex;"><span>		<span style="color:#a6e22e">savestate</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;&#39;</span>
-</span></span><span style="display:flex;"><span>	}
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">const</span> <span style="color:#a6e22e">counterReducer</span> <span style="color:#f92672">=</span> (<span style="color:#a6e22e">state</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">initialState</span>, <span style="color:#a6e22e">action</span>) =&gt; {
-</span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">switch</span> (<span style="color:#a6e22e">action</span>.<span style="color:#a6e22e">type</span>) {
-</span></span><span style="display:flex;"><span>			<span style="color:#66d9ef">case</span> <span style="color:#a6e22e">ACTION_INCREASE</span><span style="color:#f92672">:</span>
-</span></span><span style="display:flex;"><span>				<span style="color:#66d9ef">return</span> {...<span style="color:#a6e22e">state</span>, <span style="color:#a6e22e">number</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">state</span>.<span style="color:#a6e22e">number</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">action</span>.<span style="color:#a6e22e">payload</span>.<span style="color:#a6e22e">num</span>, <span style="color:#a6e22e">savestate</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;unsaved&#34;</span>} 
-</span></span><span style="display:flex;"><span>			<span style="color:#66d9ef">case</span> <span style="color:#a6e22e">ACTION_DECREASE</span><span style="color:#f92672">:</span>
-</span></span><span style="display:flex;"><span>				<span style="color:#66d9ef">return</span> {...<span style="color:#a6e22e">state</span>, <span style="color:#a6e22e">number</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">state</span>.<span style="color:#a6e22e">number</span> <span style="color:#f92672">-</span> <span style="color:#a6e22e">action</span>.<span style="color:#a6e22e">payload</span>.<span style="color:#a6e22e">num</span>, <span style="color:#a6e22e">savestate</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;unsaved&#34;</span>}
-</span></span><span style="display:flex;"><span>			<span style="color:#66d9ef">case</span> <span style="color:#a6e22e">ACTION_ASYNC_SAVE_STARTED</span><span style="color:#f92672">:</span>
-</span></span><span style="display:flex;"><span>				<span style="color:#66d9ef">return</span> {...<span style="color:#a6e22e">state</span>, <span style="color:#a6e22e">savestate</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">action</span>.<span style="color:#a6e22e">payload</span>.<span style="color:#a6e22e">message</span>}
-</span></span><span style="display:flex;"><span>			<span style="color:#66d9ef">case</span> <span style="color:#a6e22e">ACTION_ASYNC_SAVE_SUCCEED</span><span style="color:#f92672">:</span>
-</span></span><span style="display:flex;"><span>				<span style="color:#66d9ef">return</span> {...<span style="color:#a6e22e">state</span>, <span style="color:#a6e22e">savestate</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">action</span>.<span style="color:#a6e22e">payload</span>.<span style="color:#a6e22e">message</span>}
-</span></span><span style="display:flex;"><span>			<span style="color:#66d9ef">case</span> <span style="color:#a6e22e">ACTION_ASYNC_SAVE_FAIL</span><span style="color:#f92672">:</span>
-</span></span><span style="display:flex;"><span>				<span style="color:#66d9ef">return</span> {...<span style="color:#a6e22e">state</span>, <span style="color:#a6e22e">savestate</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">action</span>.<span style="color:#a6e22e">payload</span>.<span style="color:#a6e22e">error</span>}
-</span></span><span style="display:flex;"><span>			<span style="color:#66d9ef">default</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">state</span>;
-</span></span><span style="display:flex;"><span>		}
-</span></span><span style="display:flex;"><span>	}
-</span></span></code></pre></div><p>The reducer works as its decribed functions: receiving action and returning new state based on action payload and current state.</p>
-<h4 id="5-creating-the-store">5. Creating the Store:</h4>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>	<span style="color:#75715e">// redux/storeRedux.js 
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>	<span style="color:#75715e">//- we named with the suffix &#34;Redux&#34; in order to compare with Redux Toolkit later
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
-</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">import</span> { <span style="color:#a6e22e">createStore</span> } <span style="color:#a6e22e">from</span> <span style="color:#e6db74">&#39;redux&#39;</span>;
-</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">import</span> <span style="color:#a6e22e">thunkMiddleware</span> <span style="color:#a6e22e">from</span> <span style="color:#e6db74">&#39;redux-thunk&#39;</span>;
-</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">import</span> <span style="color:#a6e22e">counterReducer</span> <span style="color:#a6e22e">from</span> <span style="color:#e6db74">&#39;./counterRedux&#39;</span>;
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">const</span> <span style="color:#a6e22e">rootReducers</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">combineReducers</span>({
-</span></span><span style="display:flex;"><span>		<span style="color:#a6e22e">counterReducer</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">counterReducer</span>
-</span></span><span style="display:flex;"><span>	})
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">const</span> <span style="color:#a6e22e">store</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">createStore</span>(
-</span></span><span style="display:flex;"><span>		<span style="color:#a6e22e">rootReducers</span>
-</span></span><span style="display:flex;"><span>	);
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">export</span> <span style="color:#66d9ef">default</span> <span style="color:#a6e22e">store</span>;
-</span></span></code></pre></div><p>Until here, we have completed our simple redux implementation, next will be using in an react component.</p>
-<h4 id="6-react-component">6. React component:</h4>
-<p>Since version v7.1.0, Redux Hooks were added and were recommended by Redux team over <code>connect</code> API. So there are 2 basic hooks that we need:</p>
-<p><strong>useDispatch</strong>:  to dispatch an actions</p>
-<p><strong>useSelector</strong>: to subscribe to changes of state. Whenever state is changed, this hook will trigger an update event of React and re-render page.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">import</span> <span style="color:#a6e22e">React</span> <span style="color:#a6e22e">from</span> <span style="color:#e6db74">&#39;react&#39;</span>
-</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">import</span> { <span style="color:#a6e22e">useDispatch</span>, <span style="color:#a6e22e">useSelector</span> } <span style="color:#a6e22e">from</span> <span style="color:#e6db74">&#39;react-redux&#39;</span>;
-</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">import</span> { <span style="color:#a6e22e">actionIncrease</span>, <span style="color:#a6e22e">actionDecrease</span> } <span style="color:#a6e22e">from</span> <span style="color:#e6db74">&#39;../../redux/counterRedux&#39;</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">const</span> <span style="color:#a6e22e">CounterRedux</span> <span style="color:#f92672">=</span> () =&gt; {
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">const</span> <span style="color:#a6e22e">number</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">useSelector</span>(<span style="color:#a6e22e">state</span> =&gt; <span style="color:#a6e22e">state</span>.<span style="color:#a6e22e">counterReducer</span>.<span style="color:#a6e22e">number</span>);
-</span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">const</span> <span style="color:#a6e22e">dispatch</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">useDispatch</span>();
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">return</span> (
-</span></span><span style="display:flex;"><span>			<span style="color:#f92672">&lt;</span><span style="color:#a6e22e">div</span><span style="color:#f92672">&gt;</span>
-</span></span><span style="display:flex;"><span>				<span style="color:#f92672">&lt;</span><span style="color:#a6e22e">h4</span><span style="color:#f92672">&gt;</span><span style="color:#a6e22e">Counter</span> <span style="color:#a6e22e">Redux</span><span style="color:#f92672">&lt;</span><span style="color:#960050;background-color:#1e0010">/h4&gt;</span>
-</span></span><span style="display:flex;"><span>				<span style="color:#f92672">&lt;</span><span style="color:#a6e22e">button</span> <span style="color:#a6e22e">onClick</span><span style="color:#f92672">=</span>{<span style="color:#a6e22e">e</span> =&gt; <span style="color:#a6e22e">dispatch</span>(<span style="color:#a6e22e">actionIncrease</span>())}<span style="color:#f92672">&gt;</span><span style="color:#a6e22e">Add</span><span style="color:#f92672">&lt;</span><span style="color:#960050;background-color:#1e0010">/button&gt;&amp;nbsp;</span>
-</span></span><span style="display:flex;"><span>				<span style="color:#f92672">&lt;</span><span style="color:#a6e22e">button</span> <span style="color:#a6e22e">onClick</span><span style="color:#f92672">=</span>{<span style="color:#a6e22e">e</span> =&gt; <span style="color:#a6e22e">dispatch</span>(<span style="color:#a6e22e">actionDecrease</span>())}<span style="color:#f92672">&gt;</span><span style="color:#a6e22e">Subtract</span><span style="color:#f92672">&lt;</span><span style="color:#960050;background-color:#1e0010">/button&gt;&amp;nbsp;</span>
-</span></span><span style="display:flex;"><span>				<span style="color:#f92672">&lt;</span><span style="color:#a6e22e">h3</span><span style="color:#f92672">&gt;</span><span style="color:#a6e22e">Result</span><span style="color:#f92672">:</span> <span style="color:#f92672">&lt;</span><span style="color:#a6e22e">span</span><span style="color:#f92672">&gt;</span>{<span style="color:#a6e22e">number</span>}<span style="color:#f92672">&lt;</span><span style="color:#960050;background-color:#1e0010">/span&gt;&lt;/h3&gt;</span>
-</span></span><span style="display:flex;"><span>			<span style="color:#f92672">&lt;</span><span style="color:#960050;background-color:#1e0010">/div&gt;</span>
-</span></span><span style="display:flex;"><span>		)
-</span></span><span style="display:flex;"><span>	}
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">export</span> <span style="color:#66d9ef">default</span> <span style="color:#a6e22e">CounterRedux</span>;
-</span></span></code></pre></div><p>So now we have a running application but you may ask: what is the point of the whole boilerplate code above for just a simple functionality?</p>
-<p>Well, I will list out some of the benefits:</p>
-<ul>
-<li>
-<p><strong>Maintainability</strong>: when you application grows up to thousands of lines of code. Adding a new state or removing one might be a hassle but with Redux approach, it becomes easier. You only need to create new separated file of actions, reducers, and states then have components subscribe to new states.</p>
-</li>
-<li>
-<p><strong>Tractability</strong>:  each action, there will be a brand new state object in the store, this will give us an ability to trace back every steps and actions previously and to reproduce whatever series of actions we want. This is a huge advantages of helping you debuging, testing, and fixing errors without repeating all the steps at the beginning over and over again.</p>
-</li>
-</ul>
-<h4 id="7-asynchronous-requests---redux-thunk">7. Asynchronous requests - redux thunk</h4>
-<p>Not all actions of the application are synchronous. The application usually has async requests to interact with back end servers. Therefore Redux give us redux-thunk to handle the requests to servers.</p>
-<p>Theoretically, we don&rsquo;t need redux-thunk and the async call inside actionSave. We could call an async requests either in action functions or reducer functions. However it has disadvantages below:</p>
-<ul>
-<li>
-<p><strong>Action</strong>: must always has dispatch object as the action&rsquo;s argument. This means you have to inject the dispath object the action whenever testing either unit tests or integration tests.</p>
-</li>
-<li>
-<p><strong>Reducer</strong>: there will be side effects since the return state depends on the async request. This means you can not utilize the time travel feature of Redux development tool because the reducers are not pure functions anymore</p>
-</li>
-</ul>
-<p>So, the redux-thunk middleware came into place.</p>
-<ul>
-<li><strong>redux-thunk</strong> requires action return a function with dispatchObject as its argument and when action is dispatched, the middleware will intercept the action and automatically passing the dispatch object, which is used inside the action function as we have:</li>
-</ul>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span>   
-</span></span><span style="display:flex;"><span>   ...
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>   <span style="color:#66d9ef">export</span> <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">actionSave</span> <span style="color:#f92672">=</span> () =&gt; {
-</span></span><span style="display:flex;"><span>   	<span style="color:#66d9ef">return</span> (<span style="color:#a6e22e">dispathObject</span>) =&gt; {
-</span></span><span style="display:flex;"><span>   		<span style="color:#a6e22e">dispathObject</span>(<span style="color:#a6e22e">actionAsyncSaveStarted</span>(<span style="color:#e6db74">&#34;saving...&#34;</span>));
-</span></span><span style="display:flex;"><span>   		
-</span></span><span style="display:flex;"><span>   		<span style="color:#66d9ef">const</span> <span style="color:#a6e22e">fakeRequest</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> Promise((<span style="color:#a6e22e">resolve</span>, <span style="color:#a6e22e">reject</span>) =&gt; {
-</span></span><span style="display:flex;"><span>   			<span style="color:#a6e22e">setTimeout</span>(() =&gt; {
-</span></span><span style="display:flex;"><span>   				<span style="color:#a6e22e">resolve</span>(<span style="color:#e6db74">&#34;save succeeded&#34;</span>)
-</span></span><span style="display:flex;"><span>   				<span style="color:#75715e">// reject(&#34;save failed&#34;);
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>   			}, <span style="color:#ae81ff">2000</span>);
-</span></span><span style="display:flex;"><span>   		})
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>   		<span style="color:#66d9ef">return</span> <span style="color:#a6e22e">fakeRequest</span>
-</span></span><span style="display:flex;"><span>   			.<span style="color:#a6e22e">then</span>(<span style="color:#a6e22e">result</span> =&gt; {
-</span></span><span style="display:flex;"><span>   				<span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#34;success&#34;</span>, <span style="color:#a6e22e">result</span>)
-</span></span><span style="display:flex;"><span>   				<span style="color:#a6e22e">dispathObject</span>(<span style="color:#a6e22e">actionAsyncSaveSucceed</span>(<span style="color:#a6e22e">result</span>))
-</span></span><span style="display:flex;"><span>   			})
-</span></span><span style="display:flex;"><span>   			.<span style="color:#66d9ef">catch</span>(<span style="color:#a6e22e">error</span> =&gt; {
-</span></span><span style="display:flex;"><span>   				<span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#34;error&#34;</span>, <span style="color:#a6e22e">error</span>)
-</span></span><span style="display:flex;"><span>   				<span style="color:#a6e22e">dispathObject</span>(<span style="color:#a6e22e">actionAsyncSaveFail</span>(<span style="color:#a6e22e">error</span>))
-</span></span><span style="display:flex;"><span>   			}) 
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>   	}
-</span></span><span style="display:flex;"><span>   }
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>   ...
-</span></span></code></pre></div><p>As a result, the <code>action</code> function does not depend on dispathObject, and the <code>reducers</code> are kept as pure functions. All the advantages of redux are preserved.</p>
-<p>Install redux-thunk:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>   $ npm install redux-thunk
-</span></span></code></pre></div><p>Add thunk to middleware of redux store</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>	...
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>	<span style="color:#75715e">// add add dev tool to composer
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>	<span style="color:#66d9ef">const</span> <span style="color:#a6e22e">devtoolCompose</span> <span style="color:#f92672">=</span> window.<span style="color:#a6e22e">__REDUX_DEVTOOLS_EXTENSION_COMPOSE__</span> <span style="color:#f92672">||</span> <span style="color:#a6e22e">compose</span>;
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>	<span style="color:#75715e">// apply middleware as an enhancer
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>	<span style="color:#66d9ef">const</span> <span style="color:#a6e22e">middlewareEnhancer</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">applyMiddleware</span>(<span style="color:#a6e22e">thunkMiddleware</span>);
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>	<span style="color:#75715e">// compose all enhancers
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>	<span style="color:#66d9ef">const</span> <span style="color:#a6e22e">composeEnhancers</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">devtoolCompose</span>(<span style="color:#a6e22e">middlewareEnhancer</span>);
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>	...
-</span></span></code></pre></div><p>Because the redux dev tool is not active by default, we have to manually initialize as the <code>devtoolCompose</code></p>
-<p>Finally, redux store provide a way to set default state at <code>createStore</code> function:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>	....
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>	<span style="color:#75715e">// initialize state
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>	<span style="color:#66d9ef">const</span> <span style="color:#a6e22e">initialState</span> <span style="color:#f92672">=</span> {
-</span></span><span style="display:flex;"><span>		<span style="color:#a6e22e">counterReducer</span><span style="color:#f92672">:</span> {
-</span></span><span style="display:flex;"><span>			<span style="color:#a6e22e">number</span><span style="color:#f92672">:</span> <span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>
-</span></span><span style="display:flex;"><span>		}
-</span></span><span style="display:flex;"><span>	}
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">export</span> <span style="color:#66d9ef">default</span> <span style="color:#a6e22e">createStore</span>(
-</span></span><span style="display:flex;"><span>		<span style="color:#a6e22e">rootReducers</span>, 
-</span></span><span style="display:flex;"><span>		<span style="color:#a6e22e">initialState</span>,
-</span></span><span style="display:flex;"><span>		<span style="color:#a6e22e">composeEnhancers</span>
-</span></span><span style="display:flex;"><span>	);
-</span></span></code></pre></div><p>This is the complete store.js file:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">import</span> { <span style="color:#a6e22e">createStore</span>, <span style="color:#a6e22e">combineReducers</span>, <span style="color:#a6e22e">compose</span>, <span style="color:#a6e22e">applyMiddleware</span> } <span style="color:#a6e22e">from</span> <span style="color:#e6db74">&#39;redux&#39;</span>;
-</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">import</span> <span style="color:#a6e22e">thunkMiddleware</span> <span style="color:#a6e22e">from</span> <span style="color:#e6db74">&#39;redux-thunk&#39;</span>;
-</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">import</span> <span style="color:#a6e22e">counterReducer</span> <span style="color:#a6e22e">from</span> <span style="color:#e6db74">&#39;./counterRedux&#39;</span>;
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">const</span> <span style="color:#a6e22e">rootReducers</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">combineReducers</span>({
-</span></span><span style="display:flex;"><span>		<span style="color:#a6e22e">counterReducer</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">counterReducer</span>
-</span></span><span style="display:flex;"><span>	})
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>	<span style="color:#75715e">// add add dev tool to composer
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>	<span style="color:#66d9ef">const</span> <span style="color:#a6e22e">devtoolCompose</span> <span style="color:#f92672">=</span> window.<span style="color:#a6e22e">__REDUX_DEVTOOLS_EXTENSION_COMPOSE__</span> <span style="color:#f92672">||</span> <span style="color:#a6e22e">compose</span>;
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>	<span style="color:#75715e">// apply middleware as an enhancer
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>	<span style="color:#66d9ef">const</span> <span style="color:#a6e22e">middlewareEnhancer</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">applyMiddleware</span>(<span style="color:#a6e22e">thunkMiddleware</span>);
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>	<span style="color:#75715e">// compose all enhancers
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>	<span style="color:#66d9ef">const</span> <span style="color:#a6e22e">composeEnhancers</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">devtoolCompose</span>(<span style="color:#a6e22e">middlewareEnhancer</span>);
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>	<span style="color:#75715e">// initialize state
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>	<span style="color:#66d9ef">const</span> <span style="color:#a6e22e">initialState</span> <span style="color:#f92672">=</span> {
-</span></span><span style="display:flex;"><span>		<span style="color:#a6e22e">counterReducer</span><span style="color:#f92672">:</span> {
-</span></span><span style="display:flex;"><span>			<span style="color:#a6e22e">number</span><span style="color:#f92672">:</span> <span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>
-</span></span><span style="display:flex;"><span>		}
-</span></span><span style="display:flex;"><span>	}
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">export</span> <span style="color:#66d9ef">default</span> <span style="color:#a6e22e">createStore</span>(
-</span></span><span style="display:flex;"><span>		<span style="color:#a6e22e">rootReducers</span>, 
-</span></span><span style="display:flex;"><span>		<span style="color:#a6e22e">initialState</span>,
-</span></span><span style="display:flex;"><span>		<span style="color:#a6e22e">composeEnhancers</span>
-</span></span><span style="display:flex;"><span>	);
-</span></span></code></pre></div><h3 id="conclusion">Conclusion</h3>
-<p>Redux is an useful state management library for all javascript frameworks, expecially for ReacJs.</p>
-<p>Understand and get familiar with it is an advantage for any font-end developers on their daily life working tasks.</p>
-
-              </div>
-          </div>
-      </div>
-      <div class="row singleBlog__tags">
-        <div class="col-lg-6">
-          <div class="d-flex justify-content-center small">
-             
-            <ul>
-                      </ul>
-            
-          </div>
-        </div>
-      </div>
-  </div>
-</section>
-
-
-  </div>
-  <section class="footer" id="contact">
-	<div class="footer__background_shape">
-		<svg viewBox="0 0 1920 79">
-			<path d="M0 0h1920v79L0 0z" data-name="Path 1450" />
-		</svg>
-	</div>
-	<div class="container">
-		
-		
-		
-		<div class="row footer__footer">
-			<div class="col-lg-6">
-				<div class="footer__footer_copy text-light">
-					<p>All right reserved copyright © LoveFamily 2021</p>
-				</div>
-			</div>
-			<div class="col-lg-6">
-				<div class="footer__footer_social">
-					<ul class="unstyle-list">
-						
-						
-						<li class="d-inline-block mx-2"><a class="text-light" target="_blank" href="https://www.facebook.com/baotran.vonguyen.9"><i
-									class="fa fa-2x fa-facebook-official"></i></a>
-						</li>
-						
-						<li class="d-inline-block mx-2"><a class="text-light" target="_blank" href="https://www.linkedin.com/in/brian-tran-vo/"><i
-									class="fa fa-2x fa-linkedin-square"></i></a>
-						</li>
-						
-						<li class="d-inline-block mx-2"><a class="text-light" target="_blank" href="https://twitter.com/BrianTranVo"><i
-									class="fa fa-2x fa-twitter-square"></i></a>
-						</li>
-						
-						<li class="d-inline-block mx-2"><a class="text-light" target="_blank" href="https://github.com/tranvnb"><i
-									class="fa fa-2x fa-github-square"></i></a>
-						</li>
-						
-					</ul>
-				</div>
-			</div>
-		</div>
-	</div>
-</section>
-
-
-<script src="https://tranvnb.github.io/plugins/jQuery/jquery.min.js"></script>
-<script src="https://tranvnb.github.io/plugins/bootstrap/bootstrap.bundle.min.js"></script>
-<script src="https://tranvnb.github.io/plugins/slick/slick.min.js"></script>
-<script src="https://tranvnb.github.io/plugins/slick/slick.min.js"></script>
-<script src="https://tranvnb.github.io/plugins/waypoint/jquery.waypoints.min.js"></script>
-<script src="https://tranvnb.github.io/plugins/magnafic-popup/jquery.magnific-popup.min.js"></script>
-<script src="https://tranvnb.github.io/plugins/tweenmax/TweenMax.min.js"></script>
-<script src="https://tranvnb.github.io/plugins/masonry/masonry.min.js"></script>
-
-<script src="https://tranvnb.github.io/js/form-handler.min.js"></script>
-
-<script src="https://tranvnb.github.io/js/script.min.js"></script>
-</body>
-
-</html>
+<!doctype html><html><head><meta charset=utf-8><title>How to use Redux and its benefits</title>
+<meta name=viewport content="width=device-width,initial-scale=1"><meta name=viewport content="width=device-width,initial-scale=1,maximum-scale=1"><meta property='og:title' content='How to use Redux and its benefits'><meta property='og:image' content='https://tranvnb.github.io/images/allpost/redux-thumb.jpg'><meta property='og:description' content='Redux is one of the most popular state management libraries and specifically for ReactJs. It helps to centralize all the component states of the application and provide the ability to track all of state changes over time.'><meta name=twitter:title content='How to use Redux and its benefits'><meta name=twitter:description content='https://tranvnb.github.io/images/allpost/redux-thumb.jpg'><meta name=twitter:image content='Redux is one of the most popular state management libraries and specifically for ReactJs. It helps to centralize all the component states of the application and provide the ability to track all of state changes over time.'><link rel=stylesheet href=https://tranvnb.github.io/plugins/slick/slick.css><link rel=stylesheet href=https://tranvnb.github.io/plugins/slick/slick-theme.css><link rel=stylesheet href=https://tranvnb.github.io/plugins/font-awesome/css/font-awesome.min.css><link rel=stylesheet href=https://tranvnb.github.io/plugins/magnafic-popup/magnific-popup.css><link href=https://tranvnb.github.io/scss/style.min.css rel=stylesheet><link rel="shortcut icon" href=https://tranvnb.github.io/images/favicon.ico type=image/x-icon><link rel=icon href=https://tranvnb.github.io/images/favicon.png type=image/x-icon><script async src="https://www.googletagmanager.com/gtag/js?id=G-9CG05CN5E7"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date),gtag("config","G-9CG05CN5E7")</script></head><body><nav class="navbar navbar-expand-lg fixed-top"><div class=container><a href=https://tranvnb.github.io/ class=navbar-brand><img style=width:68px;border-radius:31% src=https://tranvnb.github.io/images/site-navigation/logo.jpg alt=site-logo>
+</a><button type=button class="navbar-toggler collapsed" data-bs-toggle=collapse data-bs-target=#navbarCollapse>
+<span class=navbar-toggler-icon></span>
+<span class=navbar-toggler-icon></span>
+<span class=navbar-toggler-icon></span></button><div class="collapse navbar-collapse justify-content-between" id=navbarCollapse><ul class="nav navbar-nav main-navigation my-0 mx-auto"><li class=nav-item><a href=https://tranvnb.github.io/#home class="nav-link text-dark text-sm-center p-2">Home</a></li><li class=nav-item><a href=https://tranvnb.github.io/#about class="nav-link text-dark text-sm-center p-2">About</a></li><li class=nav-item><a href=https://tranvnb.github.io/#resume class="nav-link text-dark text-sm-center p-2">Resume</a></li><li class=nav-item><a href=https://tranvnb.github.io/#blog class="nav-link text-dark text-sm-center p-2">Blog</a></li><li class=nav-item><a href=https://tranvnb.github.io/#contact class="nav-link text-dark text-sm-center p-2">Contact</a></li></ul></div></div></nav><div id=content><header class=breadCrumb><div class=container><div class=row><div class="col-lg-10 col-md-12 offset-lg-1 offset-md-0 text-center"><h3 class=breadCrumb__title>How to use Redux and its benefits</h3><nav aria-label=breadcrumb class="d-flex justify-content-center"><ol class="breadcrumb align-items-center"><li class=breadcrumb-item><a href=https://tranvnb.github.io/>Home</a></li><li class=breadcrumb-item><a href=https://tranvnb.github.io/blog>All Post</a></li><li class="breadcrumb-item active" aria-current=page>How to use Redux and its benefits</li></ol></nav></div></div></div></header><section class="section singleBlog"><div class=container><div class="row singleBlog__publish"><div class=col-lg-6><div class="d-flex justify-content-center"><span class=small>Published Date: May 2, 2021</span></div></div></div><div class=row><div class=col-lg-12><div class=singleBlog__feature><img src=https://tranvnb.github.io/images/single-blog/redux-feature.jpg alt=feature-image></div></div></div><div class="row mt-5"><div class=col-lg-12><div class=singleBlog__content><h3 id=introduction>Introduction</h3><p>Redux is one of the most popular state management libraries and specifically for ReactJs. It helps to centralize all the component states of the application and provide the ability to track all of state changes over time.</p><p>In this tutorial, we will be creating a ReactJs app with both Redux and Redux toolkit to demonstrate the advantages/disadvantages of Redux toolkit over Redux.</p><p>This is the <a href=https://vivacious-befitting-softball.glitch.me/>demo</a> of this project.</p><h3 id=redux-in-a-nutshell>Redux in a nutshell</h3><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-shell data-lang=shell><span style=display:flex><span>
+</span></span><span style=display:flex><span>	                                                                                
+</span></span><span style=display:flex><span>              GUI                                        Reducers               
+</span></span><span style=display:flex><span>        +-------------+                               +-------------+           
+</span></span><span style=display:flex><span>        | User        |          Dispatch             | Update state|           
+</span></span><span style=display:flex><span>        | interactions ------------------------------&gt;| base on     |           
+</span></span><span style=display:flex><span>        |             |           Action              | action type |           
+</span></span><span style=display:flex><span>        +-------------+      +--------------+         +-------------+           
+</span></span><span style=display:flex><span>               ^             |  +Type       |                |                  
+</span></span><span style=display:flex><span>               |             |  +Payload    |         <span style=color:#66d9ef>return</span> |new states        
+</span></span><span style=display:flex><span> update        |             +--------------+                |                  
+</span></span><span style=display:flex><span> front-end/GUI |                                             |                  
+</span></span><span style=display:flex><span>               |                                      +------v-----+            
+</span></span><span style=display:flex><span>               |                                      |            |            
+</span></span><span style=display:flex><span>               |         Notify front-end             |store new   |Store       
+</span></span><span style=display:flex><span>                &lt;-------------------------------------|states      |            
+</span></span><span style=display:flex><span>                                                      |            |            
+</span></span><span style=display:flex><span>                                                      +------------+            
+</span></span></code></pre></div><p>Redux comprise of 3 main components: <strong>Action</strong>, <strong>Reducer</strong>, and <strong>Store</strong> (storing the states)</p><p><strong>Action</strong>: an planed javascript object containing detail of an action. For example an action of pouring water into a bottle. Its detail will be:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-javascript data-lang=javascript><span style=display:flex><span>
+</span></span><span style=display:flex><span>	{
+</span></span><span style=display:flex><span>		<span style=color:#a6e22e>type</span><span style=color:#f92672>:</span> <span style=color:#e6db74>&#34;pour_water_into_bottle&#34;</span>,
+</span></span><span style=display:flex><span>		<span style=color:#a6e22e>payload</span><span style=color:#f92672>:</span> {
+</span></span><span style=display:flex><span>			<span style=color:#a6e22e>used_hand</span><span style=color:#f92672>:</span> <span style=color:#e6db74>&#34;right&#34;</span>,
+</span></span><span style=display:flex><span>			<span style=color:#a6e22e>amount_of_water</span><span style=color:#f92672>:</span> <span style=color:#e6db74>&#34;4 cup&#34;</span>
+</span></span><span style=display:flex><span>		}
+</span></span><span style=display:flex><span>	}
+</span></span></code></pre></div><p><strong>Reducer</strong>: a functions calculates and then return new state of our application. Follow the pouring water example above, the reducers will receive action from user with all the details and current state value and return the result:</p><p>Current/initial state:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-javascript data-lang=javascript><span style=display:flex><span>
+</span></span><span style=display:flex><span>	<span style=color:#a6e22e>application_state</span><span style=color:#f92672>:</span> {
+</span></span><span style=display:flex><span>		<span style=color:#a6e22e>water_in_bottle</span><span style=color:#f92672>:</span> <span style=color:#e6db74>&#34;0 cup&#34;</span>,
+</span></span><span style=display:flex><span>		<span style=color:#a6e22e>bottle_size</span><span style=color:#f92672>:</span> <span style=color:#e6db74>&#34;4 cup&#34;</span>,
+</span></span><span style=display:flex><span>		<span style=color:#a6e22e>bottle_is_full</span><span style=color:#f92672>:</span> <span style=color:#e6db74>&#34;no&#34;</span>
+</span></span><span style=display:flex><span>	}
+</span></span></code></pre></div><p>After pouring action (new state) :</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-javascript data-lang=javascript><span style=display:flex><span>
+</span></span><span style=display:flex><span>	<span style=color:#a6e22e>application_state</span><span style=color:#f92672>:</span> {
+</span></span><span style=display:flex><span>		<span style=color:#a6e22e>water_in_bottle</span><span style=color:#f92672>:</span> <span style=color:#e6db74>&#34;4 cup&#34;</span>,
+</span></span><span style=display:flex><span>		<span style=color:#a6e22e>bottle_size</span><span style=color:#f92672>:</span> <span style=color:#e6db74>&#34;4 cup&#34;</span>,
+</span></span><span style=display:flex><span>		<span style=color:#a6e22e>bottle_is_full</span><span style=color:#f92672>:</span> <span style=color:#e6db74>&#34;yes&#34;</span>
+</span></span><span style=display:flex><span>	}
+</span></span></code></pre></div><p><strong>Store</strong> : is where all the state (plain javascript object) and functions to trigger actions are stored. At this stage, the new state is updated and notify the front-end to re-render a new image to user (the bottle has more water and is full compare to the previous state is empty)</p><p>That was a simple explaination of how redux works.</p><h3 id=the-scaffolding-directories>The scaffolding directories</h3><p>Presumably you have created React project using <code>create-react-app</code> cli.</p><p>We are going to create 2 redux store using both Redux and Redux Toolkit, so this is the result structure after fully implementing the project and I am going to go through steps by steps shortly.</p><p>This is the structure of the project or you could find it at github link <a href=https://github.com/tranvnb/redux-and-redux-toolkit>here</a></p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-shell data-lang=shell><span style=display:flex><span>
+</span></span><span style=display:flex><span>	.                                       
+</span></span><span style=display:flex><span>	├── LICENSE                             
+</span></span><span style=display:flex><span>	├── README.md                           
+</span></span><span style=display:flex><span>	├── package-lock.json                   
+</span></span><span style=display:flex><span>	├── package.json                        
+</span></span><span style=display:flex><span>	├── public                              
+</span></span><span style=display:flex><span>	│   ├── favicon.ico                     
+</span></span><span style=display:flex><span>	│   ├── index.html                      
+</span></span><span style=display:flex><span>	│   ├── logo192.png                     
+</span></span><span style=display:flex><span>	│   ├── logo512.png                     
+</span></span><span style=display:flex><span>	│   ├── manifest.json                   
+</span></span><span style=display:flex><span>	│   └── robots.txt                      
+</span></span><span style=display:flex><span>	└── src                                 
+</span></span><span style=display:flex><span>		├── App.css                         
+</span></span><span style=display:flex><span>		├── App.js                          
+</span></span><span style=display:flex><span>		├── App.test.js                     
+</span></span><span style=display:flex><span>		├── components                      
+</span></span><span style=display:flex><span>		│   ├── CounterRedux                
+</span></span><span style=display:flex><span>		│   │   ├── counterRedux.js         
+</span></span><span style=display:flex><span>		│   │   └── index.js                
+</span></span><span style=display:flex><span>		│   └── CounterReduxToolkit         
+</span></span><span style=display:flex><span>		│       ├── counterReduxToolkit.js  
+</span></span><span style=display:flex><span>		│       └── index.js                
+</span></span><span style=display:flex><span>		├── index.css                       
+</span></span><span style=display:flex><span>		├── index.js                        
+</span></span><span style=display:flex><span>		├── logo.svg                        
+</span></span><span style=display:flex><span>		├── redux                           
+</span></span><span style=display:flex><span>		│   ├── counterRedux.js             
+</span></span><span style=display:flex><span>		│   ├── counterReduxToolkit.js      
+</span></span><span style=display:flex><span>		│   ├── storeRedux.js               
+</span></span><span style=display:flex><span>		│   └── storeReduxToolkit.js        
+</span></span><span style=display:flex><span>		├── reportWebVitals.js              
+</span></span><span style=display:flex><span>		└── setupTests.js               
+</span></span></code></pre></div><h3 id=counter-component-using-redux>Counter component using Redux</h3><p>Let begin with the Redux, we need to have add redux libraries:</p><h4 id=1-install-some-required-libraries>1. Install some required libraries</h4><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-shell data-lang=shell><span style=display:flex><span>	$ npm install redux
+</span></span><span style=display:flex><span>	$ npm install react-redux
+</span></span></code></pre></div><h4 id=2-define-action-types>2. Define action types</h4><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-javascript data-lang=javascript><span style=display:flex><span>
+</span></span><span style=display:flex><span>	<span style=color:#75715e>// create action alias
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>	<span style=color:#66d9ef>const</span> <span style=color:#a6e22e>ACTION_INCREASE</span> <span style=color:#f92672>=</span> <span style=color:#e6db74>&#34;ACTION_INCREASE&#34;</span>;
+</span></span><span style=display:flex><span>	<span style=color:#66d9ef>const</span> <span style=color:#a6e22e>ACTION_DECREASE</span> <span style=color:#f92672>=</span> <span style=color:#e6db74>&#34;ACTION_DECREASE&#34;</span>;
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>	<span style=color:#66d9ef>const</span> <span style=color:#a6e22e>ACTION_ASYNC_SAVE_STARTED</span> <span style=color:#f92672>=</span> <span style=color:#e6db74>&#34;ACTION_ASYNC_SAVE_STARTED&#34;</span>;
+</span></span><span style=display:flex><span>	<span style=color:#66d9ef>const</span> <span style=color:#a6e22e>ACTION_ASYNC_SAVE_SUCCEED</span> <span style=color:#f92672>=</span> <span style=color:#e6db74>&#34;ACTION_ASYNC_SAVE_SUCCEED&#34;</span>;
+</span></span><span style=display:flex><span>	<span style=color:#66d9ef>const</span> <span style=color:#a6e22e>ACTION_ASYNC_SAVE_FAIL</span> <span style=color:#f92672>=</span> <span style=color:#e6db74>&#34;ACTION_ASYNC_SAVE_FAIL&#34;</span>;
+</span></span><span style=display:flex><span>	
+</span></span></code></pre></div><p>You might wonder why we need these definitions.</p><ul><li><p><strong>Firstly</strong>, because we are going to use these constants in various places, so we need to define them only in 1 place. That makes the code management and refactoring easier later on.</p></li><li><p><strong>Secondly</strong>, these definitions are used in the redux debug tool and it will show the values of these contants relatively to redux actions. Thus, the readability and clarity are important.</p></li></ul><h4 id=3-create-the-actions>3. Create the actions</h4><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-javascript data-lang=javascript><span style=display:flex><span>	
+</span></span><span style=display:flex><span>	<span style=color:#75715e>// create action and its payload
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>	<span style=color:#66d9ef>export</span> <span style=color:#66d9ef>const</span> <span style=color:#a6e22e>actionIncrease</span> <span style=color:#f92672>=</span> (<span style=color:#a6e22e>num</span> <span style=color:#f92672>=</span> <span style=color:#ae81ff>1</span>) =&gt; ({
+</span></span><span style=display:flex><span>		<span style=color:#a6e22e>type</span><span style=color:#f92672>:</span> <span style=color:#a6e22e>ACTION_INCREASE</span>,
+</span></span><span style=display:flex><span>		<span style=color:#a6e22e>payload</span><span style=color:#f92672>:</span> {
+</span></span><span style=display:flex><span>			<span style=color:#a6e22e>num</span>
+</span></span><span style=display:flex><span>		}
+</span></span><span style=display:flex><span>	})
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>	<span style=color:#66d9ef>export</span> <span style=color:#66d9ef>const</span> <span style=color:#a6e22e>actionDecrease</span> <span style=color:#f92672>=</span> (<span style=color:#a6e22e>num</span> <span style=color:#f92672>=</span> <span style=color:#ae81ff>1</span>) =&gt; ({
+</span></span><span style=display:flex><span>		<span style=color:#a6e22e>type</span><span style=color:#f92672>:</span> <span style=color:#a6e22e>ACTION_DECREASE</span>,
+</span></span><span style=display:flex><span>		<span style=color:#a6e22e>payload</span><span style=color:#f92672>:</span> {
+</span></span><span style=display:flex><span>			<span style=color:#a6e22e>num</span>
+</span></span><span style=display:flex><span>		}
+</span></span><span style=display:flex><span>	})
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>	<span style=color:#66d9ef>export</span> <span style=color:#66d9ef>const</span> <span style=color:#a6e22e>actionAsyncSaveStarted</span> <span style=color:#f92672>=</span> (<span style=color:#a6e22e>message</span>) =&gt; ({
+</span></span><span style=display:flex><span>		<span style=color:#a6e22e>type</span><span style=color:#f92672>:</span> <span style=color:#a6e22e>ACTION_ASYNC_SAVE_STARTED</span>,
+</span></span><span style=display:flex><span>		<span style=color:#a6e22e>payload</span><span style=color:#f92672>:</span> {
+</span></span><span style=display:flex><span>			<span style=color:#a6e22e>message</span><span style=color:#f92672>:</span> <span style=color:#a6e22e>message</span>
+</span></span><span style=display:flex><span>		}
+</span></span><span style=display:flex><span>	})
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>	<span style=color:#66d9ef>export</span> <span style=color:#66d9ef>const</span> <span style=color:#a6e22e>actionAsyncSaveSucceed</span> <span style=color:#f92672>=</span> (<span style=color:#a6e22e>message</span>) =&gt; ({
+</span></span><span style=display:flex><span>		<span style=color:#a6e22e>type</span><span style=color:#f92672>:</span> <span style=color:#a6e22e>ACTION_ASYNC_SAVE_SUCCEED</span>,
+</span></span><span style=display:flex><span>		<span style=color:#a6e22e>payload</span><span style=color:#f92672>:</span> {
+</span></span><span style=display:flex><span>			<span style=color:#a6e22e>message</span><span style=color:#f92672>:</span> <span style=color:#a6e22e>message</span>
+</span></span><span style=display:flex><span>		}    
+</span></span><span style=display:flex><span>	})
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>	<span style=color:#66d9ef>export</span> <span style=color:#66d9ef>const</span> <span style=color:#a6e22e>actionAsyncSaveFail</span> <span style=color:#f92672>=</span> (<span style=color:#a6e22e>message</span>) =&gt; ({
+</span></span><span style=display:flex><span>		<span style=color:#a6e22e>type</span><span style=color:#f92672>:</span> <span style=color:#a6e22e>ACTION_ASYNC_SAVE_FAIL</span>,
+</span></span><span style=display:flex><span>		<span style=color:#a6e22e>payload</span><span style=color:#f92672>:</span> {
+</span></span><span style=display:flex><span>			<span style=color:#a6e22e>error</span><span style=color:#f92672>:</span> <span style=color:#a6e22e>message</span>
+</span></span><span style=display:flex><span>		}
+</span></span><span style=display:flex><span>	})
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>	<span style=color:#66d9ef>export</span> <span style=color:#66d9ef>const</span> <span style=color:#a6e22e>actionSave</span> <span style=color:#f92672>=</span> () =&gt; {
+</span></span><span style=display:flex><span>		<span style=color:#66d9ef>return</span> (<span style=color:#a6e22e>dispathObject</span>) =&gt; {
+</span></span><span style=display:flex><span>			<span style=color:#a6e22e>dispathObject</span>(<span style=color:#a6e22e>actionAsyncSaveStarted</span>(<span style=color:#e6db74>&#34;saving...&#34;</span>));
+</span></span><span style=display:flex><span>			
+</span></span><span style=display:flex><span>			<span style=color:#66d9ef>const</span> <span style=color:#a6e22e>fakeRequest</span> <span style=color:#f92672>=</span> <span style=color:#66d9ef>new</span> Promise((<span style=color:#a6e22e>resolve</span>, <span style=color:#a6e22e>reject</span>) =&gt; {
+</span></span><span style=display:flex><span>				<span style=color:#a6e22e>setTimeout</span>(() =&gt; {
+</span></span><span style=display:flex><span>					<span style=color:#a6e22e>resolve</span>(<span style=color:#e6db74>&#34;save succeeded&#34;</span>)
+</span></span><span style=display:flex><span>					<span style=color:#75715e>// reject(&#34;save failed&#34;);
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>				}, <span style=color:#ae81ff>2000</span>);
+</span></span><span style=display:flex><span>			})
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>			<span style=color:#66d9ef>return</span> <span style=color:#a6e22e>fakeRequest</span>
+</span></span><span style=display:flex><span>				.<span style=color:#a6e22e>then</span>(<span style=color:#a6e22e>result</span> =&gt; {
+</span></span><span style=display:flex><span>					<span style=color:#a6e22e>console</span>.<span style=color:#a6e22e>log</span>(<span style=color:#e6db74>&#34;success&#34;</span>, <span style=color:#a6e22e>result</span>)
+</span></span><span style=display:flex><span>					<span style=color:#a6e22e>dispathObject</span>(<span style=color:#a6e22e>actionAsyncSaveSucceed</span>(<span style=color:#a6e22e>result</span>))
+</span></span><span style=display:flex><span>				})
+</span></span><span style=display:flex><span>				.<span style=color:#66d9ef>catch</span>(<span style=color:#a6e22e>error</span> =&gt; {
+</span></span><span style=display:flex><span>					<span style=color:#a6e22e>console</span>.<span style=color:#a6e22e>log</span>(<span style=color:#e6db74>&#34;error&#34;</span>, <span style=color:#a6e22e>error</span>)
+</span></span><span style=display:flex><span>					<span style=color:#a6e22e>dispathObject</span>(<span style=color:#a6e22e>actionAsyncSaveFail</span>(<span style=color:#a6e22e>error</span>))
+</span></span><span style=display:flex><span>				}) 
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>		}
+</span></span><span style=display:flex><span>	}
+</span></span></code></pre></div><p>Notice the <strong>actionSave</strong>, we will discuss about it at the redux-thunk section.</p><h4 id=4-now-the-reducer>4. Now the reducer</h4><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-javascript data-lang=javascript><span style=display:flex><span>
+</span></span><span style=display:flex><span>	<span style=color:#66d9ef>const</span> <span style=color:#a6e22e>initialState</span> <span style=color:#f92672>=</span> {
+</span></span><span style=display:flex><span>		<span style=color:#a6e22e>number</span><span style=color:#f92672>:</span> <span style=color:#ae81ff>0</span>,
+</span></span><span style=display:flex><span>		<span style=color:#a6e22e>savestate</span><span style=color:#f92672>:</span> <span style=color:#e6db74>&#39;&#39;</span>
+</span></span><span style=display:flex><span>	}
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>	<span style=color:#66d9ef>const</span> <span style=color:#a6e22e>counterReducer</span> <span style=color:#f92672>=</span> (<span style=color:#a6e22e>state</span> <span style=color:#f92672>=</span> <span style=color:#a6e22e>initialState</span>, <span style=color:#a6e22e>action</span>) =&gt; {
+</span></span><span style=display:flex><span>		<span style=color:#66d9ef>switch</span> (<span style=color:#a6e22e>action</span>.<span style=color:#a6e22e>type</span>) {
+</span></span><span style=display:flex><span>			<span style=color:#66d9ef>case</span> <span style=color:#a6e22e>ACTION_INCREASE</span><span style=color:#f92672>:</span>
+</span></span><span style=display:flex><span>				<span style=color:#66d9ef>return</span> {...<span style=color:#a6e22e>state</span>, <span style=color:#a6e22e>number</span><span style=color:#f92672>:</span> <span style=color:#a6e22e>state</span>.<span style=color:#a6e22e>number</span> <span style=color:#f92672>+</span> <span style=color:#a6e22e>action</span>.<span style=color:#a6e22e>payload</span>.<span style=color:#a6e22e>num</span>, <span style=color:#a6e22e>savestate</span><span style=color:#f92672>:</span> <span style=color:#e6db74>&#34;unsaved&#34;</span>} 
+</span></span><span style=display:flex><span>			<span style=color:#66d9ef>case</span> <span style=color:#a6e22e>ACTION_DECREASE</span><span style=color:#f92672>:</span>
+</span></span><span style=display:flex><span>				<span style=color:#66d9ef>return</span> {...<span style=color:#a6e22e>state</span>, <span style=color:#a6e22e>number</span><span style=color:#f92672>:</span> <span style=color:#a6e22e>state</span>.<span style=color:#a6e22e>number</span> <span style=color:#f92672>-</span> <span style=color:#a6e22e>action</span>.<span style=color:#a6e22e>payload</span>.<span style=color:#a6e22e>num</span>, <span style=color:#a6e22e>savestate</span><span style=color:#f92672>:</span> <span style=color:#e6db74>&#34;unsaved&#34;</span>}
+</span></span><span style=display:flex><span>			<span style=color:#66d9ef>case</span> <span style=color:#a6e22e>ACTION_ASYNC_SAVE_STARTED</span><span style=color:#f92672>:</span>
+</span></span><span style=display:flex><span>				<span style=color:#66d9ef>return</span> {...<span style=color:#a6e22e>state</span>, <span style=color:#a6e22e>savestate</span><span style=color:#f92672>:</span> <span style=color:#a6e22e>action</span>.<span style=color:#a6e22e>payload</span>.<span style=color:#a6e22e>message</span>}
+</span></span><span style=display:flex><span>			<span style=color:#66d9ef>case</span> <span style=color:#a6e22e>ACTION_ASYNC_SAVE_SUCCEED</span><span style=color:#f92672>:</span>
+</span></span><span style=display:flex><span>				<span style=color:#66d9ef>return</span> {...<span style=color:#a6e22e>state</span>, <span style=color:#a6e22e>savestate</span><span style=color:#f92672>:</span> <span style=color:#a6e22e>action</span>.<span style=color:#a6e22e>payload</span>.<span style=color:#a6e22e>message</span>}
+</span></span><span style=display:flex><span>			<span style=color:#66d9ef>case</span> <span style=color:#a6e22e>ACTION_ASYNC_SAVE_FAIL</span><span style=color:#f92672>:</span>
+</span></span><span style=display:flex><span>				<span style=color:#66d9ef>return</span> {...<span style=color:#a6e22e>state</span>, <span style=color:#a6e22e>savestate</span><span style=color:#f92672>:</span> <span style=color:#a6e22e>action</span>.<span style=color:#a6e22e>payload</span>.<span style=color:#a6e22e>error</span>}
+</span></span><span style=display:flex><span>			<span style=color:#66d9ef>default</span><span style=color:#f92672>:</span> <span style=color:#66d9ef>return</span> <span style=color:#a6e22e>state</span>;
+</span></span><span style=display:flex><span>		}
+</span></span><span style=display:flex><span>	}
+</span></span></code></pre></div><p>The reducer works as its decribed functions: receiving action and returning new state based on action payload and current state.</p><h4 id=5-creating-the-store>5. Creating the Store:</h4><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-javascript data-lang=javascript><span style=display:flex><span>
+</span></span><span style=display:flex><span>	<span style=color:#75715e>// redux/storeRedux.js 
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>	<span style=color:#75715e>//- we named with the suffix &#34;Redux&#34; in order to compare with Redux Toolkit later
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>
+</span></span><span style=display:flex><span>	<span style=color:#66d9ef>import</span> { <span style=color:#a6e22e>createStore</span> } <span style=color:#a6e22e>from</span> <span style=color:#e6db74>&#39;redux&#39;</span>;
+</span></span><span style=display:flex><span>	<span style=color:#66d9ef>import</span> <span style=color:#a6e22e>thunkMiddleware</span> <span style=color:#a6e22e>from</span> <span style=color:#e6db74>&#39;redux-thunk&#39;</span>;
+</span></span><span style=display:flex><span>	<span style=color:#66d9ef>import</span> <span style=color:#a6e22e>counterReducer</span> <span style=color:#a6e22e>from</span> <span style=color:#e6db74>&#39;./counterRedux&#39;</span>;
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>	<span style=color:#66d9ef>const</span> <span style=color:#a6e22e>rootReducers</span> <span style=color:#f92672>=</span> <span style=color:#a6e22e>combineReducers</span>({
+</span></span><span style=display:flex><span>		<span style=color:#a6e22e>counterReducer</span><span style=color:#f92672>:</span> <span style=color:#a6e22e>counterReducer</span>
+</span></span><span style=display:flex><span>	})
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>	<span style=color:#66d9ef>const</span> <span style=color:#a6e22e>store</span> <span style=color:#f92672>=</span> <span style=color:#a6e22e>createStore</span>(
+</span></span><span style=display:flex><span>		<span style=color:#a6e22e>rootReducers</span>
+</span></span><span style=display:flex><span>	);
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>	<span style=color:#66d9ef>export</span> <span style=color:#66d9ef>default</span> <span style=color:#a6e22e>store</span>;
+</span></span></code></pre></div><p>Until here, we have completed our simple redux implementation, next will be using in an react component.</p><h4 id=6-react-component>6. React component:</h4><p>Since version v7.1.0, Redux Hooks were added and were recommended by Redux team over <code>connect</code> API. So there are 2 basic hooks that we need:</p><p><strong>useDispatch</strong>: to dispatch an actions</p><p><strong>useSelector</strong>: to subscribe to changes of state. Whenever state is changed, this hook will trigger an update event of React and re-render page.</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-javascript data-lang=javascript><span style=display:flex><span>
+</span></span><span style=display:flex><span>	<span style=color:#66d9ef>import</span> <span style=color:#a6e22e>React</span> <span style=color:#a6e22e>from</span> <span style=color:#e6db74>&#39;react&#39;</span>
+</span></span><span style=display:flex><span>	<span style=color:#66d9ef>import</span> { <span style=color:#a6e22e>useDispatch</span>, <span style=color:#a6e22e>useSelector</span> } <span style=color:#a6e22e>from</span> <span style=color:#e6db74>&#39;react-redux&#39;</span>;
+</span></span><span style=display:flex><span>	<span style=color:#66d9ef>import</span> { <span style=color:#a6e22e>actionIncrease</span>, <span style=color:#a6e22e>actionDecrease</span> } <span style=color:#a6e22e>from</span> <span style=color:#e6db74>&#39;../../redux/counterRedux&#39;</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>	<span style=color:#66d9ef>const</span> <span style=color:#a6e22e>CounterRedux</span> <span style=color:#f92672>=</span> () =&gt; {
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>		<span style=color:#66d9ef>const</span> <span style=color:#a6e22e>number</span> <span style=color:#f92672>=</span> <span style=color:#a6e22e>useSelector</span>(<span style=color:#a6e22e>state</span> =&gt; <span style=color:#a6e22e>state</span>.<span style=color:#a6e22e>counterReducer</span>.<span style=color:#a6e22e>number</span>);
+</span></span><span style=display:flex><span>		<span style=color:#66d9ef>const</span> <span style=color:#a6e22e>dispatch</span> <span style=color:#f92672>=</span> <span style=color:#a6e22e>useDispatch</span>();
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>		<span style=color:#66d9ef>return</span> (
+</span></span><span style=display:flex><span>			<span style=color:#f92672>&lt;</span><span style=color:#a6e22e>div</span><span style=color:#f92672>&gt;</span>
+</span></span><span style=display:flex><span>				<span style=color:#f92672>&lt;</span><span style=color:#a6e22e>h4</span><span style=color:#f92672>&gt;</span><span style=color:#a6e22e>Counter</span> <span style=color:#a6e22e>Redux</span><span style=color:#f92672>&lt;</span><span style=color:#960050;background-color:#1e0010>/h4&gt;</span>
+</span></span><span style=display:flex><span>				<span style=color:#f92672>&lt;</span><span style=color:#a6e22e>button</span> <span style=color:#a6e22e>onClick</span><span style=color:#f92672>=</span>{<span style=color:#a6e22e>e</span> =&gt; <span style=color:#a6e22e>dispatch</span>(<span style=color:#a6e22e>actionIncrease</span>())}<span style=color:#f92672>&gt;</span><span style=color:#a6e22e>Add</span><span style=color:#f92672>&lt;</span><span style=color:#960050;background-color:#1e0010>/button&gt;&amp;nbsp;</span>
+</span></span><span style=display:flex><span>				<span style=color:#f92672>&lt;</span><span style=color:#a6e22e>button</span> <span style=color:#a6e22e>onClick</span><span style=color:#f92672>=</span>{<span style=color:#a6e22e>e</span> =&gt; <span style=color:#a6e22e>dispatch</span>(<span style=color:#a6e22e>actionDecrease</span>())}<span style=color:#f92672>&gt;</span><span style=color:#a6e22e>Subtract</span><span style=color:#f92672>&lt;</span><span style=color:#960050;background-color:#1e0010>/button&gt;&amp;nbsp;</span>
+</span></span><span style=display:flex><span>				<span style=color:#f92672>&lt;</span><span style=color:#a6e22e>h3</span><span style=color:#f92672>&gt;</span><span style=color:#a6e22e>Result</span><span style=color:#f92672>:</span> <span style=color:#f92672>&lt;</span><span style=color:#a6e22e>span</span><span style=color:#f92672>&gt;</span>{<span style=color:#a6e22e>number</span>}<span style=color:#f92672>&lt;</span><span style=color:#960050;background-color:#1e0010>/span&gt;&lt;/h3&gt;</span>
+</span></span><span style=display:flex><span>			<span style=color:#f92672>&lt;</span><span style=color:#960050;background-color:#1e0010>/div&gt;</span>
+</span></span><span style=display:flex><span>		)
+</span></span><span style=display:flex><span>	}
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>	<span style=color:#66d9ef>export</span> <span style=color:#66d9ef>default</span> <span style=color:#a6e22e>CounterRedux</span>;
+</span></span></code></pre></div><p>So now we have a running application but you may ask: what is the point of the whole boilerplate code above for just a simple functionality?</p><p>Well, I will list out some of the benefits:</p><ul><li><p><strong>Maintainability</strong>: when you application grows up to thousands of lines of code. Adding a new state or removing one might be a hassle but with Redux approach, it becomes easier. You only need to create new separated file of actions, reducers, and states then have components subscribe to new states.</p></li><li><p><strong>Tractability</strong>: each action, there will be a brand new state object in the store, this will give us an ability to trace back every steps and actions previously and to reproduce whatever series of actions we want. This is a huge advantages of helping you debuging, testing, and fixing errors without repeating all the steps at the beginning over and over again.</p></li></ul><h4 id=7-asynchronous-requests---redux-thunk>7. Asynchronous requests - redux thunk</h4><p>Not all actions of the application are synchronous. The application usually has async requests to interact with back end servers. Therefore Redux give us redux-thunk to handle the requests to servers.</p><p>Theoretically, we don&rsquo;t need redux-thunk and the async call inside actionSave. We could call an async requests either in action functions or reducer functions. However it has disadvantages below:</p><ul><li><p><strong>Action</strong>: must always has dispatch object as the action&rsquo;s argument. This means you have to inject the dispath object the action whenever testing either unit tests or integration tests.</p></li><li><p><strong>Reducer</strong>: there will be side effects since the return state depends on the async request. This means you can not utilize the time travel feature of Redux development tool because the reducers are not pure functions anymore</p></li></ul><p>So, the redux-thunk middleware came into place.</p><ul><li><strong>redux-thunk</strong> requires action return a function with dispatchObject as its argument and when action is dispatched, the middleware will intercept the action and automatically passing the dispatch object, which is used inside the action function as we have:</li></ul><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-javascript data-lang=javascript><span style=display:flex><span>   
+</span></span><span style=display:flex><span>   ...
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>   <span style=color:#66d9ef>export</span> <span style=color:#66d9ef>const</span> <span style=color:#a6e22e>actionSave</span> <span style=color:#f92672>=</span> () =&gt; {
+</span></span><span style=display:flex><span>   	<span style=color:#66d9ef>return</span> (<span style=color:#a6e22e>dispathObject</span>) =&gt; {
+</span></span><span style=display:flex><span>   		<span style=color:#a6e22e>dispathObject</span>(<span style=color:#a6e22e>actionAsyncSaveStarted</span>(<span style=color:#e6db74>&#34;saving...&#34;</span>));
+</span></span><span style=display:flex><span>   		
+</span></span><span style=display:flex><span>   		<span style=color:#66d9ef>const</span> <span style=color:#a6e22e>fakeRequest</span> <span style=color:#f92672>=</span> <span style=color:#66d9ef>new</span> Promise((<span style=color:#a6e22e>resolve</span>, <span style=color:#a6e22e>reject</span>) =&gt; {
+</span></span><span style=display:flex><span>   			<span style=color:#a6e22e>setTimeout</span>(() =&gt; {
+</span></span><span style=display:flex><span>   				<span style=color:#a6e22e>resolve</span>(<span style=color:#e6db74>&#34;save succeeded&#34;</span>)
+</span></span><span style=display:flex><span>   				<span style=color:#75715e>// reject(&#34;save failed&#34;);
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>   			}, <span style=color:#ae81ff>2000</span>);
+</span></span><span style=display:flex><span>   		})
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>   		<span style=color:#66d9ef>return</span> <span style=color:#a6e22e>fakeRequest</span>
+</span></span><span style=display:flex><span>   			.<span style=color:#a6e22e>then</span>(<span style=color:#a6e22e>result</span> =&gt; {
+</span></span><span style=display:flex><span>   				<span style=color:#a6e22e>console</span>.<span style=color:#a6e22e>log</span>(<span style=color:#e6db74>&#34;success&#34;</span>, <span style=color:#a6e22e>result</span>)
+</span></span><span style=display:flex><span>   				<span style=color:#a6e22e>dispathObject</span>(<span style=color:#a6e22e>actionAsyncSaveSucceed</span>(<span style=color:#a6e22e>result</span>))
+</span></span><span style=display:flex><span>   			})
+</span></span><span style=display:flex><span>   			.<span style=color:#66d9ef>catch</span>(<span style=color:#a6e22e>error</span> =&gt; {
+</span></span><span style=display:flex><span>   				<span style=color:#a6e22e>console</span>.<span style=color:#a6e22e>log</span>(<span style=color:#e6db74>&#34;error&#34;</span>, <span style=color:#a6e22e>error</span>)
+</span></span><span style=display:flex><span>   				<span style=color:#a6e22e>dispathObject</span>(<span style=color:#a6e22e>actionAsyncSaveFail</span>(<span style=color:#a6e22e>error</span>))
+</span></span><span style=display:flex><span>   			}) 
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>   	}
+</span></span><span style=display:flex><span>   }
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>   ...
+</span></span></code></pre></div><p>As a result, the <code>action</code> function does not depend on dispathObject, and the <code>reducers</code> are kept as pure functions. All the advantages of redux are preserved.</p><p>Install redux-thunk:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-shell data-lang=shell><span style=display:flex><span>
+</span></span><span style=display:flex><span>   $ npm install redux-thunk
+</span></span></code></pre></div><p>Add thunk to middleware of redux store</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-javascript data-lang=javascript><span style=display:flex><span>
+</span></span><span style=display:flex><span>	...
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>	<span style=color:#75715e>// add add dev tool to composer
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>	<span style=color:#66d9ef>const</span> <span style=color:#a6e22e>devtoolCompose</span> <span style=color:#f92672>=</span> window.<span style=color:#a6e22e>__REDUX_DEVTOOLS_EXTENSION_COMPOSE__</span> <span style=color:#f92672>||</span> <span style=color:#a6e22e>compose</span>;
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>	<span style=color:#75715e>// apply middleware as an enhancer
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>	<span style=color:#66d9ef>const</span> <span style=color:#a6e22e>middlewareEnhancer</span> <span style=color:#f92672>=</span> <span style=color:#a6e22e>applyMiddleware</span>(<span style=color:#a6e22e>thunkMiddleware</span>);
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>	<span style=color:#75715e>// compose all enhancers
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>	<span style=color:#66d9ef>const</span> <span style=color:#a6e22e>composeEnhancers</span> <span style=color:#f92672>=</span> <span style=color:#a6e22e>devtoolCompose</span>(<span style=color:#a6e22e>middlewareEnhancer</span>);
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>	...
+</span></span></code></pre></div><p>Because the redux dev tool is not active by default, we have to manually initialize as the <code>devtoolCompose</code></p><p>Finally, redux store provide a way to set default state at <code>createStore</code> function:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-javascript data-lang=javascript><span style=display:flex><span>
+</span></span><span style=display:flex><span>	....
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>	<span style=color:#75715e>// initialize state
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>	<span style=color:#66d9ef>const</span> <span style=color:#a6e22e>initialState</span> <span style=color:#f92672>=</span> {
+</span></span><span style=display:flex><span>		<span style=color:#a6e22e>counterReducer</span><span style=color:#f92672>:</span> {
+</span></span><span style=display:flex><span>			<span style=color:#a6e22e>number</span><span style=color:#f92672>:</span> <span style=color:#f92672>-</span><span style=color:#ae81ff>1</span>
+</span></span><span style=display:flex><span>		}
+</span></span><span style=display:flex><span>	}
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>	<span style=color:#66d9ef>export</span> <span style=color:#66d9ef>default</span> <span style=color:#a6e22e>createStore</span>(
+</span></span><span style=display:flex><span>		<span style=color:#a6e22e>rootReducers</span>, 
+</span></span><span style=display:flex><span>		<span style=color:#a6e22e>initialState</span>,
+</span></span><span style=display:flex><span>		<span style=color:#a6e22e>composeEnhancers</span>
+</span></span><span style=display:flex><span>	);
+</span></span></code></pre></div><p>This is the complete store.js file:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-javascript data-lang=javascript><span style=display:flex><span>
+</span></span><span style=display:flex><span>	<span style=color:#66d9ef>import</span> { <span style=color:#a6e22e>createStore</span>, <span style=color:#a6e22e>combineReducers</span>, <span style=color:#a6e22e>compose</span>, <span style=color:#a6e22e>applyMiddleware</span> } <span style=color:#a6e22e>from</span> <span style=color:#e6db74>&#39;redux&#39;</span>;
+</span></span><span style=display:flex><span>	<span style=color:#66d9ef>import</span> <span style=color:#a6e22e>thunkMiddleware</span> <span style=color:#a6e22e>from</span> <span style=color:#e6db74>&#39;redux-thunk&#39;</span>;
+</span></span><span style=display:flex><span>	<span style=color:#66d9ef>import</span> <span style=color:#a6e22e>counterReducer</span> <span style=color:#a6e22e>from</span> <span style=color:#e6db74>&#39;./counterRedux&#39;</span>;
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>	<span style=color:#66d9ef>const</span> <span style=color:#a6e22e>rootReducers</span> <span style=color:#f92672>=</span> <span style=color:#a6e22e>combineReducers</span>({
+</span></span><span style=display:flex><span>		<span style=color:#a6e22e>counterReducer</span><span style=color:#f92672>:</span> <span style=color:#a6e22e>counterReducer</span>
+</span></span><span style=display:flex><span>	})
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>	<span style=color:#75715e>// add add dev tool to composer
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>	<span style=color:#66d9ef>const</span> <span style=color:#a6e22e>devtoolCompose</span> <span style=color:#f92672>=</span> window.<span style=color:#a6e22e>__REDUX_DEVTOOLS_EXTENSION_COMPOSE__</span> <span style=color:#f92672>||</span> <span style=color:#a6e22e>compose</span>;
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>	<span style=color:#75715e>// apply middleware as an enhancer
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>	<span style=color:#66d9ef>const</span> <span style=color:#a6e22e>middlewareEnhancer</span> <span style=color:#f92672>=</span> <span style=color:#a6e22e>applyMiddleware</span>(<span style=color:#a6e22e>thunkMiddleware</span>);
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>	<span style=color:#75715e>// compose all enhancers
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>	<span style=color:#66d9ef>const</span> <span style=color:#a6e22e>composeEnhancers</span> <span style=color:#f92672>=</span> <span style=color:#a6e22e>devtoolCompose</span>(<span style=color:#a6e22e>middlewareEnhancer</span>);
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>	<span style=color:#75715e>// initialize state
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>	<span style=color:#66d9ef>const</span> <span style=color:#a6e22e>initialState</span> <span style=color:#f92672>=</span> {
+</span></span><span style=display:flex><span>		<span style=color:#a6e22e>counterReducer</span><span style=color:#f92672>:</span> {
+</span></span><span style=display:flex><span>			<span style=color:#a6e22e>number</span><span style=color:#f92672>:</span> <span style=color:#f92672>-</span><span style=color:#ae81ff>1</span>
+</span></span><span style=display:flex><span>		}
+</span></span><span style=display:flex><span>	}
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>	<span style=color:#66d9ef>export</span> <span style=color:#66d9ef>default</span> <span style=color:#a6e22e>createStore</span>(
+</span></span><span style=display:flex><span>		<span style=color:#a6e22e>rootReducers</span>, 
+</span></span><span style=display:flex><span>		<span style=color:#a6e22e>initialState</span>,
+</span></span><span style=display:flex><span>		<span style=color:#a6e22e>composeEnhancers</span>
+</span></span><span style=display:flex><span>	);
+</span></span></code></pre></div><h3 id=conclusion>Conclusion</h3><p>Redux is an useful state management library for all javascript frameworks, expecially for ReacJs.</p><p>Understand and get familiar with it is an advantage for any font-end developers on their daily life working tasks.</p></div></div></div><div class="row singleBlog__tags"><div class=col-lg-6><div class="d-flex justify-content-center small"><ul></ul></div></div></div></div></section></div><section class=footer id=contact><div class=footer__background_shape><svg viewBox="0 0 1920 79"><path d="M0 0h1920v79L0 0z" data-name="Path 1450"/></svg></div><div class=container><div class="row footer__footer"><div class=col-lg-6><div class="footer__footer_copy text-light"><p>All right reserved copyright © LoveFamily 2021</p></div></div><div class=col-lg-6><div class=footer__footer_social><ul class=unstyle-list><li class="d-inline-block mx-2"><a class=text-light target=_blank href=https://www.facebook.com/baotran.vonguyen.9><i class="fa fa-2x fa-facebook-official"></i></a></li><li class="d-inline-block mx-2"><a class=text-light target=_blank href=https://www.linkedin.com/in/brian-tran-vo/><i class="fa fa-2x fa-linkedin-square"></i></a></li><li class="d-inline-block mx-2"><a class=text-light target=_blank href=https://twitter.com/BrianTranVo><i class="fa fa-2x fa-twitter-square"></i></a></li><li class="d-inline-block mx-2"><a class=text-light target=_blank href=https://github.com/tranvnb><i class="fa fa-2x fa-github-square"></i></a></li></ul></div></div></div></div></section><script src=https://tranvnb.github.io/plugins/jQuery/jquery.min.js></script><script src=https://tranvnb.github.io/plugins/bootstrap/bootstrap.bundle.min.js></script><script src=https://tranvnb.github.io/plugins/slick/slick.min.js></script><script src=https://tranvnb.github.io/plugins/slick/slick.min.js></script><script src=https://tranvnb.github.io/plugins/waypoint/jquery.waypoints.min.js></script><script src=https://tranvnb.github.io/plugins/magnafic-popup/jquery.magnific-popup.min.js></script><script src=https://tranvnb.github.io/plugins/tweenmax/TweenMax.min.js></script><script src=https://tranvnb.github.io/plugins/masonry/masonry.min.js></script><script src=https://tranvnb.github.io/js/form-handler.min.js></script><script src=https://tranvnb.github.io/js/script.min.js></script></body></html>
